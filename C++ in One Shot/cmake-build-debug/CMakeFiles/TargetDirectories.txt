@@ -1,0 +1,3 @@
+C:/Users/PMLS/Desktop/DSA/C++ in One Shot/cmake-build-debug/CMakeFiles/C___in_One_Shot.dir
+C:/Users/PMLS/Desktop/DSA/C++ in One Shot/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PMLS/Desktop/DSA/C++ in One Shot/cmake-build-debug/CMakeFiles/rebuild_cache.dir
