@@ -14,8 +14,10 @@ int main() {
 //        cout<<endl;
 //    }
     for(int i{0};i<num;i++){
+        char ch = 'A';
         for(int j{1};j<=num;j++){
-            cout<<j<<" ";
+            cout<<ch;
+            ch = ch + 1;
         }
         cout<<endl;
     }
