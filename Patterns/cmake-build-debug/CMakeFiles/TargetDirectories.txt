@@ -1,0 +1,3 @@
+C:/Users/PMLS/Desktop/DSA/Patterns/cmake-build-debug/CMakeFiles/Patterns.dir
+C:/Users/PMLS/Desktop/DSA/Patterns/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PMLS/Desktop/DSA/Patterns/cmake-build-debug/CMakeFiles/rebuild_cache.dir
