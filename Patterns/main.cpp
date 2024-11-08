@@ -6,22 +6,15 @@ int main() {
     cout<<"Enter a number:";
     cin>>num;
 
-    cout<<"Pattern for Numbers"<<endl;
-    int number{1};
-    for(int i{0};i<num;i++){
-        for(int j{0};j<num;j++){
-            cout<<number;
-            number ++;
-        }
-        cout<<endl;
-    }
+    //CONDITION
+    if (num > 0) {
+        cout << "STAR PATTERN IS HERE" << endl;
+    } else
+        cout<<"Enter an integer greater than 0 for the pattern to be made"<<endl;
 
-    cout<<"Pattern for Characters"<<endl;
-    char ch{'A'};
-    for(int i{0};i<num;i++){
-        for(int j{0};j<num;j++){
-            cout<<ch;
-            ch ++;
+    for (int (i) = 0; (i) < num; ++(i)) {
+        for(int j=0;j<i+1;j++){
+            cout<<" * ";
         }
         cout<<endl;
     }
