@@ -6,18 +6,22 @@ int main() {
     cout<<"Enter a number:";
     cin>>num;
 
-    //out for loop
-//    for(int i{1};i<=num;i++){
-//        for(int j{1};j<=num;j++){
-//            cout<<j<<" ";
-//        }
-//        cout<<endl;
-//    }
+    cout<<"Pattern for Numbers"<<endl;
+    int number{1};
     for(int i{0};i<num;i++){
-        char ch = 'A';
-        for(int j{1};j<=num;j++){
+        for(int j{0};j<num;j++){
+            cout<<number;
+            number ++;
+        }
+        cout<<endl;
+    }
+
+    cout<<"Pattern for Characters"<<endl;
+    char ch{'A'};
+    for(int i{0};i<num;i++){
+        for(int j{0};j<num;j++){
             cout<<ch;
-            ch = ch + 1;
+            ch ++;
         }
         cout<<endl;
     }
