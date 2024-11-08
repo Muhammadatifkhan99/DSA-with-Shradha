@@ -7,15 +7,18 @@ int main() {
     cin>>num;
 
     //out for loop
-    for(int i{1};i<=num;i++){
+//    for(int i{1};i<=num;i++){
+//        for(int j{1};j<=num;j++){
+//            cout<<j<<" ";
+//        }
+//        cout<<endl;
+//    }
+    for(int i{0};i<num;i++){
         for(int j{1};j<=num;j++){
             cout<<j<<" ";
         }
         cout<<endl;
     }
-
-
-
 
     return 0;
 }
