@@ -11,14 +11,12 @@ int main() {
         cout << "STAR PATTERN IS HERE" << endl;
     } else
         cout<<"Enter an integer greater than 0 for the pattern to be made"<<endl;
-    char ch = 'A';
-    for(int i{0};i<num;i++){
-        for(int j{0};j<i+1;j++){
-            cout<<ch<<" ";
+    for (int i = 0; i < num; ++i) {
+        for(int j=i+1;j>0;j--){
+            cout<<j<<" ";
         }
         cout<<endl;
-        ch ++;
-    }
 
+    }
     return 0;
 }
