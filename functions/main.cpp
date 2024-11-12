@@ -19,13 +19,20 @@ int sumOfNumbers(int number){
     }
     return sum;
 }
+//factorial
 
+int factorialN(int n){
+    int fact{1};
+    for(int i{1};i<=n;i++){
+        fact *= i;
+    }
+    return fact;
+}
 
 int main() {
     int a {5};
     int b {4};
-    cout<<minOfTwo(a,b)<<endl;
-    cout<<sumOfNumbers(a);
-
+    cout<<factorialN(a)<<endl;
+    cout<<factorialN(b);
     return 0;
 }
