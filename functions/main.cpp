@@ -21,23 +21,23 @@ using namespace std;
 //}
 //factorial
 
-int factorial(int n){
-    int fact{1};
-    for(int i{1};i<=n;i++){
-        fact *= i;
-    }
-    return fact;
-}
-
-int nCr(int n, int r){
-    int nFact = factorial(n);
-    int rFact = factorial(r);
-    int d {0};
-    d = n - r;
-    int nmrFact = factorial(n-r);
-    int nCr{0};
-    return nFact/(rFact*nmrFact);
-}
+//int factorial(int n){
+//    int fact{1};
+//    for(int i{1};i<=n;i++){
+//        fact *= i;
+//    }
+//    return fact;
+//}
+//
+//int nCr(int n, int r){
+//    int nFact = factorial(n);
+//    int rFact = factorial(r);
+//    int d {0};
+//    d = n - r;
+//    int nmrFact = factorial(n-r);
+//    int nCr{0};
+//    return nFact/(rFact*nmrFact);
+//}
 
 
 //sumofdigits of a number
@@ -52,9 +52,23 @@ int nCr(int n, int r){
 //    return digitSum;
 //}
 
+//finding the nth fibonacci using iterative method
+int nthFib(int number){
+    if (number == 0) return 0;
+    else if ( number == 1) return 1;
+
+    int d = 0, b = 1, fib =0;
+    for(int i = 2; i<=number; i++){
+        fib = d + b;
+        d = b;
+        b = fib;
+    }
+    return b;
+}
+
 int main() {
-//    cout<<factorial(4)<<endl;
-    cout<<"nCr for n = 8, r = 2 is: "<<nCr(8,2)<<endl;
-    cout<<"nCr for n = 6, r = 3 is: "<<nCr(6,3)<<endl;
+    cout<<nthFib(4)<<endl;
+    cout<<nthFib(5)<<endl;
+    cout<<nthFib(6)<<endl;
     return 0;
 }
