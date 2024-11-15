@@ -78,7 +78,7 @@ void isPrime( int number) {
 }
 }
 
-int binaryToDecimal(int decNum) {
+int decimalToBinary(int decNum) {
     int ans {0};
     int pow {1};
     while(decNum > 0){
@@ -90,9 +90,20 @@ int binaryToDecimal(int decNum) {
     return ans;
 }
 
-int main() {
-    for (int i = 1; i < 100; ++i) {
-        cout<<"The binary notation for "<<i<<": "<<binaryToDecimal(i)<<endl;
+int binaryToDecimal(int decNum){
+    int ans{};
+    int pow{1};
+    while(decNum > 0){
+        int rem = decNum % 10;
+        decNum /= 10;
+        ans += (rem*pow);
+        pow *= 2;
     }
+    return ans;
+}
+
+int main() {
+    int num=110;
+    cout<<binaryToDecimal(num);
     return 0;
 }
