@@ -53,22 +53,46 @@ using namespace std;
 //}
 
 //finding the nth fibonacci using iterative method
-int nthFib(int number){
-    if (number == 0) return 0;
-    else if ( number == 1) return 1;
+//int nthFib(int number){
+//    if (number == 0) return 0;
+//    else if ( number == 1) return 1;
+//
+//    int d = 0, b = 1, fib =0;
+//    for(int i = 2; i<=number; i++){
+//        fib = d + b;
+//        d = b;
+//        b = fib;
+//    }
+//    return b;
+//}
 
-    int d = 0, b = 1, fib =0;
-    for(int i = 2; i<=number; i++){
-        fib = d + b;
-        d = b;
-        b = fib;
+void isPrime( int number) {
+    //we are not checking for 1 and n
+    for(int i{2};i<number;i++){
+        if(number % i == 0){
+            cout<<"Prime"<<endl;
     }
-    return b;
+    else {
+        cout<<"Not Prime"<<endl;
+    }
+}
+}
+
+int binaryToDecimal(int decNum) {
+    int ans {0};
+    int pow {1};
+    while(decNum > 0){
+        int rem = decNum % 2;
+        decNum /= 2;
+        ans += (rem * pow);
+        pow = pow * 10;
+    }
+    return ans;
 }
 
 int main() {
-    cout<<nthFib(4)<<endl;
-    cout<<nthFib(5)<<endl;
-    cout<<nthFib(6)<<endl;
+    for (int i = 1; i < 100; ++i) {
+        cout<<"The binary notation for "<<i<<": "<<binaryToDecimal(i)<<endl;
+    }
     return 0;
 }
