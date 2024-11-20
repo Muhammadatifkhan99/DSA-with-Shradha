@@ -1,0 +1,3 @@
+C:/Users/PMLS/Desktop/DSA/BitWiseOperators/cmake-build-debug/CMakeFiles/BitWiseOperators.dir
+C:/Users/PMLS/Desktop/DSA/BitWiseOperators/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PMLS/Desktop/DSA/BitWiseOperators/cmake-build-debug/CMakeFiles/rebuild_cache.dir
