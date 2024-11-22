@@ -17,12 +17,38 @@ int linearSearch(int arr[],int valueToFind, int size){
     return -1;
 }
 
+void reverseArray(int arr[],int size){
+    int start {0};
+    int end {size -1};
+    while(start < end){
+        swap(arr[start],arr[end]);
+        start ++;
+        end --;
+    }
+}
 
 int main() {
-    int arr[] = {2,3,4,9,3,8,10};
+    int arr[] = {3,5,8};
+
+    for(int i=0;i<3;i++){
+        cout<<arr[i]<<endl;
+    }
+    cout<<"After Reversing"<<endl;
+
+    reverseArray(arr,3);
+
+    for(int i=0;i<3;i++){
+        cout<<arr[i]<<endl;
+    }
+
+    return 0;
+
+}
+
+
 
     //value to find
-    int target {8};
+//    int target {8};
 
 //    changeArr(arr,4);
 //    cout<<endl;
@@ -30,7 +56,7 @@ int main() {
 //        cout<<arr[i]<<" ";
 //    }
 //    cout<<endl;
-    cout<<linearSearch(arr,target,6)<<endl;
+//    cout<<linearSearch(arr,target,6)<<endl;
 
 
 //    int num[] = {12,3,12,45,-10};
@@ -56,5 +82,3 @@ int main() {
 //    }
 //    cout<<"The smallest value in the Array is: "<<smallest<<" at the index of: "<<indexSmallest<<endl;
 //    cout<<"The largest value in the Array is: "<<largest<<" at the index of: "<<indexLargest<<endl;
-    return 0;
-}
