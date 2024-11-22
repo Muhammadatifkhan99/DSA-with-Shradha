@@ -27,19 +27,56 @@ void reverseArray(int arr[],int size){
     }
 }
 
+int sumOfArray(int arr[],int size){
+    int add{0};
+    for (int i = 0; i < size; i++) {
+        add += arr[i];
+    }
+    return add;
+}
+
+int productOfArray(int arr[],int size){
+    int multiply{1};
+    for (int i = 0; i < size; i++) {
+        multiply *= arr[i];
+    }
+    return multiply;
+}
+int minOfArray(int arr[], int size){
+    int smallest = INT_MAX;
+    for(int i{0};i<size;i++){
+        if (arr[i] < smallest){
+            smallest = arr[i];
+        }
+    }
+    return smallest;
+}
+int maxOfArray(int arr[], int size){
+    int largest = INT_MIN;
+    for(int i{0};i<size;i++){
+        if (arr[i] > largest){
+            largest = arr[i];
+        }
+    }
+    return largest;
+}
+
 int main() {
-    int arr[] = {3,5,8};
+    int arr[] = {3,5,4,1,6,2};
+    int size = (sizeof(arr)/4);
+    cout<<"The size of the Array is: "<<size<<endl;
 
-    for(int i=0;i<3;i++){
-        cout<<arr[i]<<endl;
-    }
-    cout<<"After Reversing"<<endl;
+    cout<<"The sum of the Array is: "<<sumOfArray(arr,size)<<endl;
+    cout<<"The product of the Array is: "<<productOfArray(arr,size)<<endl;
+//    cout<<8*5*3<<endl;
+    cout<<"The smallest value in the Array is: "<<minOfArray(arr,size)<<endl;
+    cout<<"The largest value in the Array is: "<<maxOfArray(arr,size)<<endl;
+    int smallest = minOfArray(arr,size);
+    int largest = maxOfArray(arr,size);
+    cout<<"Before Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
+    swap(smallest,largest);
+    cout<<"After Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
 
-    reverseArray(arr,3);
-
-    for(int i=0;i<3;i++){
-        cout<<arr[i]<<endl;
-    }
 
     return 0;
 
