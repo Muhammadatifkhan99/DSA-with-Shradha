@@ -7,16 +7,31 @@ void changeArr(int arr[], int size){
         arr[i] = 2 *arr[i];
     }
 }
+int linearSearch(int arr[],int valueToFind, int size){
+    //int size = (sizeof(arr)/4);
+    for(int i{0};i<size;i++) {
+        if (arr[i] == valueToFind) {
+            return i;
+        }
+    }
+    return -1;
+}
 
 
 int main() {
-    int arr[] = {2,3,4};
+    int arr[] = {2,3,4,9,3,8,10};
 
-    changeArr(arr,4);
-    cout<<endl;
-    for (int (i) = 0; (i) < 4; ++(i)) {
-        cout<<arr[i]<<" ";
-    }
+    //value to find
+    int target {8};
+
+//    changeArr(arr,4);
+//    cout<<endl;
+//    for (int (i) = 0; (i) < 3; ++(i)) {
+//        cout<<arr[i]<<" ";
+//    }
+//    cout<<endl;
+    cout<<linearSearch(arr,target,6)<<endl;
+
 
 //    int num[] = {12,3,12,45,-10};
 //
