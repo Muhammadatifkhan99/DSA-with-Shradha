@@ -77,12 +77,22 @@ void uniqueValue(int arr[],int size){
     }
 }
 
+void intersectionArray(int arr1[], int arr2[],int size){
+    for (int i = 0; i < size; ++i) {
+        if(arr1[i] == arr2[i]){
+            cout<<arr1[i]<<endl;
+        }
+    }
+}
+
 int main() {
     int arr[] = {1,3,3,4,4,5,5,6,6,4};
+    int arr2[] = {1,3,3,4,4,5,5,6,6,4};
     int size = (sizeof(arr)/4);
     cout<<"The size of the Array is: "<<size<<endl;
 
-    uniqueValue(arr,size);
+    intersectionArray(arr,arr2,size);
+
 
 //    cout<<"The sum of the Array is: "<<sumOfArray(arr,size)<<endl;
 //    cout<<"The product of the Array is: "<<productOfArray(arr,size)<<endl;
