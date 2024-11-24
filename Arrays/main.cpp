@@ -61,21 +61,39 @@ int maxOfArray(int arr[], int size){
     return largest;
 }
 
+void uniqueValue(int arr[],int size){
+    int unique[10]= {};
+    for(int i{0};i<size;i++){
+        for(int j{1};j<size;j++){
+            if(arr[i] == arr[i+j]){
+                unique[i] = arr[i];
+            }
+        }
+    }
+    for (int (i) = 0; (i) < size; ++(i)) {
+        if(unique[i] != 0){
+            cout<<unique[i]<<endl;
+        }
+    }
+}
+
 int main() {
-    int arr[] = {3,5,4,1,6,2};
+    int arr[] = {1,3,3,4,4,5,5,6,6,4};
     int size = (sizeof(arr)/4);
     cout<<"The size of the Array is: "<<size<<endl;
 
-    cout<<"The sum of the Array is: "<<sumOfArray(arr,size)<<endl;
-    cout<<"The product of the Array is: "<<productOfArray(arr,size)<<endl;
-//    cout<<8*5*3<<endl;
-    cout<<"The smallest value in the Array is: "<<minOfArray(arr,size)<<endl;
-    cout<<"The largest value in the Array is: "<<maxOfArray(arr,size)<<endl;
-    int smallest = minOfArray(arr,size);
-    int largest = maxOfArray(arr,size);
-    cout<<"Before Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
-    swap(smallest,largest);
-    cout<<"After Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
+    uniqueValue(arr,size);
+
+//    cout<<"The sum of the Array is: "<<sumOfArray(arr,size)<<endl;
+//    cout<<"The product of the Array is: "<<productOfArray(arr,size)<<endl;
+////    cout<<8*5*3<<endl;
+//    cout<<"The smallest value in the Array is: "<<minOfArray(arr,size)<<endl;
+//    cout<<"The largest value in the Array is: "<<maxOfArray(arr,size)<<endl;
+//    int smallest = minOfArray(arr,size);
+//    int largest = maxOfArray(arr,size);
+//    cout<<"Before Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
+//    swap(smallest,largest);
+//    cout<<"After Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
 
 
     return 0;
