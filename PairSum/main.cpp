@@ -31,11 +31,29 @@ vector<int> pairSum(vector<int> nums,int target){
     }
     return ans;
 }
+
+vector<int> pairSum2(vector<int> nums, int target){
+    int n = nums.size();
+    vector<int> ans;
+    for (int i {0}, j{n-1}; i < j;) {
+        int pairSum {0};
+        pairSum = nums[i] + nums[j];
+        if(pairSum > target){
+            j--;
+        } else if ( pairSum < target){
+            i++;
+        } else{
+            ans.push_back(i);
+            ans.push_back(j);
+            return ans;
+        }
+    }
+}
 int main() {
     vector<int> nums = {2,7,11,15};
-    int target {13};
+    int target {9};
 
-    vector<int> ans = pairSum(nums,target);
+    vector<int> ans = pairSum2(nums,target);
     for(int val: ans){
         cout<<val<<endl;
     }
