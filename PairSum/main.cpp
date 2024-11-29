@@ -68,14 +68,30 @@ vector<int> pairSum2(vector<int> nums, int target){
 //        }
 //    }
 }
-int main() {
-    vector<int> nums = {2,7,11,15};
-    int target {27};
 
-    vector<int> ans = pairSum2(nums,target);
-    for(int val: ans){
-        cout<<val<<endl;
+
+//Majority Element in an Array
+int majorityElement(int arr[],int size){
+    int count {0};
+    for(int i{0};i<size;i++){
+        for(int j{1};j<=size;j++){
+            if (arr[i] == arr[j])
+                count ++;
+        }
+        if(count > (size/2)){
+            return arr[i];
+        }
     }
+}
+int main() {
+    int nums[] = {1,2,2,2,2,1,1};
+    int size {6};
+
+    cout<<majorityElement(nums,size);
+//    vector<int> ans = pairSum2(nums,target);
+//    for(int val: ans){
+//        cout<<val<<endl;
+//    }
 
     return 0;
 }
