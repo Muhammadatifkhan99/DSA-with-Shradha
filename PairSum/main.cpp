@@ -69,12 +69,22 @@ int mooreAlgorithm(vector<int> nums){
             freq --;
         }
     }
-    return ans;
+    int count {0};
+    for(int val: nums){
+        if (val == ans){
+            count ++;
+        }
+    }
+    if(count > nums.size()/2){
+        return ans;
+    }
+    else
+        return -1;
 }
 int main() {
     int nums[] = {1,2,2,1,1,1,1};
     int size {6};
-    vector<int> num = {1,1,1,1,3,2,4,3,5,3,2,1,1,2,1,2,1,1,1};
+    vector<int> num = {1,2,3,4,5};
     cout<<mooreAlgorithm(num);
 
     return 0;
