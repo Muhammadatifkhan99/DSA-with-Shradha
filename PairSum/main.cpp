@@ -54,11 +54,28 @@ int majorityElementO(vector<int> &nums){
     }
     return ans;
 }
+
+//MOORE'S Voting Algorithm
+int mooreAlgorithm(vector<int> nums){
+    int freq{0};
+    int ans{0};
+    for(int i{0};i<nums.size();i++){
+        if(freq == 0){
+            ans = nums[i];
+        }
+        if(ans == nums[i]){
+            freq ++;
+        }else {
+            freq --;
+        }
+    }
+    return ans;
+}
 int main() {
     int nums[] = {1,2,2,1,1,1,1};
     int size {6};
-    vector<int> num = {1,1,2,2,3,3,3,3,3};
-    cout<<majorityElementO(num);
+    vector<int> num = {1,1,1,1,3,2,4,3,5,3,2,1,1,2,1,2,1,1,1};
+    cout<<mooreAlgorithm(num);
 
     return 0;
 }
