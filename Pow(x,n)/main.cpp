@@ -40,7 +40,7 @@ int maxProfit(vector<int> & prices) {
 
 
 int main() {
-    vector<int> nums {7,1,5,3,6,4};
+    vector<int> nums {6,0,0,0,8,0};
     cout<<maxProfit(nums)<<endl;
 //    cout<<mypow(2,0)<<endl;
 //    cout<<mypow(0,2)<<endl;
