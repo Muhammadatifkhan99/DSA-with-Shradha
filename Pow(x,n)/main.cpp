@@ -1,4 +1,5 @@
 #include <iostream>
+#include<vector>
 using namespace std;
 
 double mypow(double x,int n){
@@ -24,12 +25,28 @@ double mypow(double x,int n){
     return ans;
 }
 
+int maxProfit(vector<int> & prices) {
+    int maxProfit{0};
+    int bestBuy = prices[0];
+    for (int i{1}; i < prices.size(); i++) {
+        if (prices[i] > bestBuy) {
+            maxProfit = max(maxProfit, prices[i] - bestBuy);
+        }
+        bestBuy = min(maxProfit, prices[i]);
+    }
+    return maxProfit;
+}
+
+
+
 int main() {
-    cout<<mypow(2,0)<<endl;
-    cout<<mypow(0,2)<<endl;
-    cout<<mypow(1,2)<<endl;
-    cout<<mypow(-1,4)<<endl;
-    cout<<mypow(-1,5)<<endl;
-    cout<<mypow(3,2)<<endl;
+    vector<int> nums {7,1,5,3,6,4};
+    cout<<maxProfit(nums)<<endl;
+//    cout<<mypow(2,0)<<endl;
+//    cout<<mypow(0,2)<<endl;
+//    cout<<mypow(1,2)<<endl;
+//    cout<<mypow(-1,4)<<endl;
+//    cout<<mypow(-1,5)<<endl;
+//    cout<<mypow(3,2)<<endl;
     return 0;
 }
