@@ -25,7 +25,7 @@ vector<int> productofArray(vector<int> nums){
     }
     vector<int> suffix (n,1);
     //suffix array
-    for(int i{n-2};i<n;i--){
+    for(int i{n-2};i>=0;i--){
         suffix[i] = suffix[i+1] * nums[i + 1];
     }
     //for ans vector
