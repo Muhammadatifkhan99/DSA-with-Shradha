@@ -23,7 +23,13 @@ int binarySearch(vector<int>& nums, int target){
 int main() {
     vector<int> nums {-1,0,3,4,5,9,12};
     int target = 12;
+
+    vector<int> nums2 {-1,0,3,5,9,12};
+    int target2 {0};
     int index = binarySearch(nums,target);
-    cout<<nums[index];
+    cout<<index<<endl;
+
+    int index2 = binarySearch(nums2,target2);
+    cout<<index2<<endl;
     return 0;
 }
