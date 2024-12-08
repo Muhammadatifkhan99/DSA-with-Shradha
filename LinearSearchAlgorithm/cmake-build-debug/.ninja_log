@@ -1,0 +1,27 @@
+# ninja log v5
+2	7472	7286394593158073	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+7484	8177	7286394600220936	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+2	1045	7286395176631170	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+1045	1120	7286395177352082	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+12	7535	7286405020841453	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+7538	7979	7286405025175463	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+12	6820	7286405355053736	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+6823	7268	7286405359517454	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+12	6833	7286406181554811	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+6835	7145	7286406184582435	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+11	6876	7286407119098437	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+6878	7059	7286407120913908	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+14	3369	7286407474510759	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+3370	3555	7286407476298451	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+11	6629	7286408090604158	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+6631	6986	7286408094082803	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+12	6663	7286408679781651	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+6663	6829	7286408681414270	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+15	6510	7286409120104434	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+6512	6824	7286409123163258	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+12	3802	7286409506940245	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+3803	4048	7286409509334867	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+14	3398	7286414180931094	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+3399	3617	7286414183043616	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
+11	6557	7286414874685772	CMakeFiles/LinearSearchAlgorithm.dir/main.cpp.obj	8526c341a99a4f11
+6559	6921	7286414878213186	LinearSearchAlgorithm.exe	ae9f6fb09a48e429
