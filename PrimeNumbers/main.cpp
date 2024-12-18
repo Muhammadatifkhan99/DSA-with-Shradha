@@ -1,5 +1,9 @@
 #include <iostream>
 #include <cmath> // For  using the function of sqrt()
+#include <vector>
+
+
+using namespace std;
 
 bool isPrime(int n) {
     if (n <= 1)
@@ -12,14 +16,22 @@ bool isPrime(int n) {
 }
 
 int main() {
-    int num;
-    std::cout << "Enter a number: ";
-    std::cin >> num;
+    vector<int> arr = {4,1,2,1,2};
+    int ans = 0;
+    for (int val: arr) {
+        ans = ans ^ val;
+    }
+    cout<<"The Single number in the Array: "<<ans<<endl;
 
-    if (isPrime(num))
-        std::cout << num << " is a prime number.\n";
-    else
-        std::cout << num << " is not a prime number.\n";
+
+    // int num;
+    // std::cout << "Enter a number: ";
+    // std::cin >> num;
+    //
+    // if (isPrime(num))
+    //     std::cout << num << " is a prime number.\n";
+    // else
+    //     std::cout << num << " is not a prime number.\n";
 
     return 0;
 }
