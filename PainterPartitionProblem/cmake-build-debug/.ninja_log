@@ -1,0 +1,11 @@
+# ninja log v6
+1	390	1734519480680766565	CMakeFiles/PainterPartitionProblem.dir/main.cpp.o	33c88f3c13ef75ef
+391	440	1734519481070705662	PainterPartitionProblem	d13b9a79571826ea
+2	325	1734519531223897768	CMakeFiles/PainterPartitionProblem.dir/main.cpp.o	33c88f3c13ef75ef
+325	369	1734519531546847615	PainterPartitionProblem	d13b9a79571826ea
+1	334	1734519604777791464	CMakeFiles/PainterPartitionProblem.dir/main.cpp.o	33c88f3c13ef75ef
+334	378	1734519605110908323	PainterPartitionProblem	d13b9a79571826ea
+2	393	1734519774953002990	CMakeFiles/PainterPartitionProblem.dir/main.cpp.o	33c88f3c13ef75ef
+393	434	1734519775343997380	PainterPartitionProblem	d13b9a79571826ea
+1	341	1734519818764055051	CMakeFiles/PainterPartitionProblem.dir/main.cpp.o	33c88f3c13ef75ef
+341	383	1734519819104045673	PainterPartitionProblem	d13b9a79571826ea
