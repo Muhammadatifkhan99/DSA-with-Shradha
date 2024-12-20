@@ -26,7 +26,19 @@ void selectionSort(int nums[], int n) {
     }
 }
 
-void printArray(int nums[], int n) {
+void insertionSort(vector<int> &arr, int n) {
+    for (int i{1};i<n;i++) {
+        int curr = arr[i];
+        int previous = i -1;
+        while (previous >= 0 && arr[previous] > curr) {
+            arr[previous +  1] = arr[previous];
+            previous --;
+        }
+        arr[previous + 1] = curr;
+    }
+}
+
+void printArray(vector<int> nums, int n) {
     cout << "[ ";
     for (int i{0};i<n;i++) {
         cout<<nums[i] << " ";
@@ -37,10 +49,11 @@ void printArray(int nums[], int n) {
 
 
 int main() {
-    int nums[] = {7,1,9,3,2};
+    int arr[] = {7,1,9,3,2};
+    vector<int> nums {4,1,5,2,3};
     int n = 5;
 
-    selectionSort(nums,n);
+    insertionSort(nums,n);
     printArray(nums,n);
 
     return 0;
