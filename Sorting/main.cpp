@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void bubbleSort(vector<int> &nums, int n) {
+void bubbleSort(int nums[], int n) {
     for (int i{0};i<n-1;i++) {
         for (int j = 0;j<n-1-i;j++) {
             if (nums[j] > nums[j+1]) {
@@ -14,10 +14,22 @@ void bubbleSort(vector<int> &nums, int n) {
     }
 }
 
-void printArray(vector<int> &nums, int n) {
-    cout << "[";
+void selectionSort(int nums[], int n) {
+    for (int i{0};i<n-1;i++) {
+        int smallestIndex = i;
+        for (int j{i+1};j<n;j++) {
+            if (nums[j] < nums[smallestIndex]) {
+                smallestIndex = j;
+            }
+        }
+        swap(nums[i],nums[smallestIndex]);
+    }
+}
+
+void printArray(int nums[], int n) {
+    cout << "[ ";
     for (int i{0};i<n;i++) {
-        cout<<nums[i] << ",";
+        cout<<nums[i] << " ";
     }
     cout << "]";
     cout<<endl;
@@ -25,10 +37,10 @@ void printArray(vector<int> &nums, int n) {
 
 
 int main() {
+    int nums[] = {7,1,9,3,2};
     int n = 5;
-    vector<int> nums = {7,1,9,3,2};
 
-    bubbleSort(nums,n);
+    selectionSort(nums,n);
     printArray(nums,n);
 
     return 0;
