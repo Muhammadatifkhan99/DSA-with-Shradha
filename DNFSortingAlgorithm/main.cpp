@@ -3,8 +3,14 @@
 
 using namespace std;
 
+void printArray(vector<int> &nums) {
+    int n = nums.size();
+    for (int i{0};i<n;i++) {
+        cout<<nums[i] << " ";
+    }
+}
 
-vector<int> sorting(vector<int> &nums) {
+void sorting(vector<int> &nums) {
     int n = nums.size();
     int countofzero = {0};
     int countofone = {0};
@@ -18,19 +24,18 @@ vector<int> sorting(vector<int> &nums) {
             countoftwos ++;
         }
     }
-    vector<int> sorted;
+    int index{0};
     for (int i{0};i<=countofzero;i++) {
-        sorted.push_back(0);
+        nums[index] = 0;
     }
     for (int i{0};i<=countofone;i++) {
-        sorted.push_back(1);
+        nums[index] = 1;
     }
     for (int i{0};i<=countoftwos;i++) {
-        sorted.push_back(2);
+        nums[index] = 2;
     }
-    return sorted;
+    printArray(nums);
 }
-
 
 
 
@@ -38,9 +43,6 @@ vector<int> sorting(vector<int> &nums) {
 
 int main() {
     vector<int> nums {2,0,2,1,1,0,1,2,0,0};
-    for (int val: sorting(nums)) {
-        cout << val << " ";
-    }
-
+    sorting(nums);
     return 0;
 }
