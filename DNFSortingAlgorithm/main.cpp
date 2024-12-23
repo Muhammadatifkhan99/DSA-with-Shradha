@@ -37,12 +37,27 @@ void sorting(vector<int> &nums) {
     printArray(nums);
 }
 
-
+void dnfSorting(vector<int> &nums) {
+    int n = nums.size();
+    int mid {0};
+    int low {0};
+    int high {n - 1};       //1 less then the actual size
+    while (mid <= high) {
+        if (nums[mid] == 0) {
+            swap(nums[low],nums[mid]);
+        } else if (nums[mid] == 1) {
+            mid = mid + 1;
+        } else {
+            swap(nums[high], nums[mid]);
+            high --;
+        }
+    }
+}
 
 
 
 int main() {
     vector<int> nums {2,0,2,1,1,0,1,2,0,0};
-    sorting(nums);
+    dnfSorting(nums);
     return 0;
 }
