@@ -46,7 +46,7 @@ void dnfSorting(vector<int> &nums) {
         if (nums[mid] == 0) {
             swap(nums[low],nums[mid]);
         } else if (nums[mid] == 1) {
-            mid = mid + 1;
+            mid = mid ++;
         } else {
             swap(nums[high], nums[mid]);
             high --;

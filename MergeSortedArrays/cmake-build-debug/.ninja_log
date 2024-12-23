@@ -1,0 +1,5 @@
+# ninja log v6
+0	355	1734963786713188883	CMakeFiles/MergeSortedArrays.dir/main.cpp.o	e2504d3c64de2a2c
+355	398	1734963787068793303	MergeSortedArrays	96dd8caeb800ba0
+1	401	1734963804454230657	CMakeFiles/MergeSortedArrays.dir/main.cpp.o	e2504d3c64de2a2c
+401	454	1734963804854450256	MergeSortedArrays	96dd8caeb800ba0
