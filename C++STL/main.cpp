@@ -5,22 +5,25 @@ using namespace std;
 
 
 int main() {
-    vector<int> vec;
+    vector<int> vec {1,2,3,4,5};
 
-    vec.push_back(1);
-    vec.push_back(2);
-    vec.push_back(3);
-    vec.push_back(4);
+    // vec.erase(vec.begin());
+    // vec.erase((vec.begin() + 2));
 
-    cout<<"vec size: "<<vec.size()<<endl;
-    cout<<"capacity: "<<vec.capacity()<<endl;
+    //deleting range of elements
 
-    cout<<"value at(0) "<< vec.at(0)<<endl;
+    // vec.erase(vec.begin() + 1, vec.begin() + 3);
 
-    cout<<"Front of vector: "<<vec.front()<<endl;
-    cout<<"back of vector: "<<vec.back()<<endl;
+    //adding a value at a specific index
+    vec.insert(vec.begin() + 2,100);
 
-    
+    for (int val: vec) {
+        cout << val << " ";
+    }
+    cout<< endl;
+
+
+
 
     return 0;
 }
