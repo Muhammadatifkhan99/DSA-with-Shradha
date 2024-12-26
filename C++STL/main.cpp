@@ -4,6 +4,8 @@
 #include<deque>
 #include<stack>
 #include<queue>
+#include<map>
+
 
 
 
@@ -11,21 +13,47 @@ using namespace std;
 
 
 int main() {
-    priority_queue<int> q;
+    map<string,int> m;
 
-    //building a reverse priority_queue
-    priority_queue<int, vector<int>,greater<int>> q1;
+    m["tv"] = 100;
+    m["laptop"] = 50;
+    m["headphones"] = 25;
 
-
-    q1.push(10);
-    q1.push(4);
-    q1.push(5);
-    q1.push(3);
-
-    while (!q1.empty()) {
-        cout << q1.top() << " ";
-        q1.pop();
+    m.insert({"camera", 22});
+    m.emplace("watches", 129);
+    for (auto p: m) {
+        cout<< p.first << " " << p.second << endl;
     }
+    cout << "Count : " << m.count("camera") << endl;
+
+    string str {""};
+    cout << "Enter the name to search in map: " << endl;
+    cin >> str;
+
+    if (m.find(str) != m.end()) {
+        cout << str << " found in map " << endl;
+    } else {
+        cout << "Not Found" << endl;
+    }
+
+
+
+
+    // priority_queue<int> q;
+    //
+    // //building a reverse priority_queue
+    // priority_queue<int, vector<int>,greater<int>> q1;
+    //
+    //
+    // q1.push(10);
+    // q1.push(4);
+    // q1.push(5);
+    // q1.push(3);
+    //
+    // while (!q1.empty()) {
+    //     cout << q1.top() << " ";
+    //     q1.pop();
+    // }
 
     //  stack<int> s;
     //
