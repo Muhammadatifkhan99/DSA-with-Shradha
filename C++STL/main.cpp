@@ -1,48 +1,44 @@
 #include<iostream>
 #include<vector>
 #include<list>
+#include<deque>
 
 using namespace std;
 
 
 int main() {
-    list<int> l {1,2,3};
+    deque<int> d {1,2,3};
 
-    for (int val: l) {
-        cout << val << " ";
+    for (int val: d) {
+        cout << val << endl;
     }
-    cout<< endl;
-
-    list<int> l1;
-
-    l1.emplace_back(0);
-    l1.push_back(1);
-    l1.push_back(2);
-    l1.push_front(3);
-    l1.push_front(5);
-
-    l1.pop_back();
-    l1.pop_front();
-
-
-    for (int val: l1) {
-        cout << val << " ";
-    }
-    cout << endl;
+    cout<< d[2] << endl;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+    // list<int> l {1,2,3};
+    //
+    // for (int val: l) {
+    //     cout << val << " ";
+    // }
+    // cout<< endl;
+    //
+    // list<int> l1;
+    //
+    // l1.emplace_back(0);
+    // l1.push_back(1);
+    // l1.push_back(2);
+    // l1.push_front(3);
+    // l1.push_front(5);
+    //
+    // l1.pop_back();
+    // l1.pop_front();
+    //
+    //
+    // for (int val: l1) {
+    //     cout << val << " ";
+    // }
+    // cout << endl;
 
 
 
