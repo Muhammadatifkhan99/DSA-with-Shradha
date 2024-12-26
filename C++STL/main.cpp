@@ -7,12 +7,40 @@ using namespace std;
 
 
 int main() {
-    deque<int> d {1,2,3};
+    vector<pair<int,int>> vec {{1,2},{3,4},{4,5},{6,7}};
 
-    for (int val: d) {
-        cout << val << endl;
+    //pushing a pair using the push_back function
+    //for push_back you have to convert the value to the pair it cannot do it
+    vec.push_back({8,9});
+    //pushing a pair using the emplace_back function which will insert it inplace and creates the object at the time of creation
+    //emplace_back convert a value into a pair
+    vec.emplace_back(10,11);
+
+    for (pair<int,int> p : vec) {
+        cout << p.first << " " << p.second << endl;
     }
-    cout<< d[2] << endl;
+    cout << endl;
+
+
+
+
+
+    // pair<int,int> p = {1,2};
+    // cout << p.first << endl;
+    // cout << p.second << endl;
+    //
+    // pair<int,pair<int,int>> p2 = {1,{12,21}};
+    // cout << p2.first << endl;
+    // cout << p2.second.first << endl;
+    // cout << p2.second.second << endl;
+
+
+    // deque<int> d {1,2,3};
+    //
+    // for (int val: d) {
+    //     cout << val << endl;
+    // }
+    // cout<< d[2] << endl;
 
 
 
