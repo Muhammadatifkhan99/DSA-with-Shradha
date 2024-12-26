@@ -3,25 +3,39 @@
 #include<list>
 #include<deque>
 #include<stack>
+#include<queue>
+
 
 
 using namespace std;
 
 
 int main() {
-     stack<int> s;
+    queue<int> q;
 
-    s.push(1);
-    s.push(2);
-    s.push(3);
+    q.push(1);
+    q.push(2);
+    q.push(3);
 
-    cout<< " size of s before swap " << s.size() << endl;
+    while (!q.empty()) {
+        cout << q.front() << endl;
+        q.pop();
+    }
+    cout<< endl;
 
-    stack<int> s2;
-
-    s2.swap(s);
-    cout<< " s size " << s.size() << endl;
-    cout<< " s2 size " << s2.size() << endl;
+    //  stack<int> s;
+    //
+    // s.push(1);
+    // s.push(2);
+    // s.push(3);
+    //
+    // cout<< " size of s before swap " << s.size() << endl;
+    //
+    // stack<int> s2;
+    //
+    // s2.swap(s);
+    // cout<< " s size " << s.size() << endl;
+    // cout<< " s2 size " << s2.size() << endl;
     // while (!s.empty()) {
     //     cout << s.top() << " ";
     //     s.pop();
