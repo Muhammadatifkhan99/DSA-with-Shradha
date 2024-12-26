@@ -5,7 +5,9 @@
 #include<stack>
 #include<queue>
 #include<map>
+#include <set>
 #include<unordered_map>
+#include<unordered_set>
 
 
 
@@ -15,20 +17,42 @@ using namespace std;
 
 
 int main() {
-    unordered_map<string,int> m;
+    unordered_set<int> us;
 
-    m.emplace("tv",21);
-    m.emplace("laptop ",23);
-    m.emplace("headphones", 34);
-    m.emplace("fridge", 56);
-    m.emplace("shoes",67);
+    us.insert(1);
+    us.insert(2);
+    us.insert(3);
+    us.insert(4);
+    us.insert(5);
+    us.insert(1);
+    us.insert(2);
+
+    cout<< "The size of this unordered set s is: "<< us.size() << endl;
+    for (auto val: us) {
+        cout<< val << " ";
+    }
+    cout<<endl;
+
+    //data is sorted but duplicates are allowed
+    multiset<int> s;
+
+    s.insert(1);
+    s.insert(2);
+    s.insert(3);
+    s.insert(4);
+    s.insert(5);
+
+    s.insert(1);
+    s.insert(2);
+    cout << "The upper bound for this multi set is: " << *(s.upper_bound(4)) << endl;
+    cout << "The lower bound for this multi set is: " << *(s.lower_bound(4)) << endl;
+
+    cout<< "The size of this multi set s is: "<< s.size() << endl;
     // m.erase(m.find("tv"));
 
-    for (auto val: m) {
-        cout<< val.first << " " << val.second << endl;
+    for (auto val: s) {
+        cout<< val << " ";
     }
-
-
     //
     // m.insert({"camera", 22});
     // m.emplace("watches", 129);
