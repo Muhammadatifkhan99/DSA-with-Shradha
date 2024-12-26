@@ -2,24 +2,53 @@
 #include<vector>
 #include<list>
 #include<deque>
+#include<stack>
+
 
 using namespace std;
 
 
 int main() {
-    vector<pair<int,int>> vec {{1,2},{3,4},{4,5},{6,7}};
+     stack<int> s;
 
-    //pushing a pair using the push_back function
-    //for push_back you have to convert the value to the pair it cannot do it
-    vec.push_back({8,9});
-    //pushing a pair using the emplace_back function which will insert it inplace and creates the object at the time of creation
-    //emplace_back convert a value into a pair
-    vec.emplace_back(10,11);
+    s.push(1);
+    s.push(2);
+    s.push(3);
 
-    for (pair<int,int> p : vec) {
-        cout << p.first << " " << p.second << endl;
-    }
-    cout << endl;
+    cout<< " size of s before swap " << s.size() << endl;
+
+    stack<int> s2;
+
+    s2.swap(s);
+    cout<< " s size " << s.size() << endl;
+    cout<< " s2 size " << s2.size() << endl;
+    // while (!s.empty()) {
+    //     cout << s.top() << " ";
+    //     s.pop();
+    // }
+    // cout<< endl;
+    // cout<< s.size() << endl;
+    // cout<< s.empty() << endl;
+
+
+
+
+
+
+
+    // vector<pair<int,int>> vec {{1,2},{3,4},{4,5},{6,7}};
+    //
+    // //pushing a pair using the push_back function
+    // //for push_back you have to convert the value to the pair it cannot do it
+    // vec.push_back({8,9});
+    // //pushing a pair using the emplace_back function which will insert it inplace and creates the object at the time of creation
+    // //emplace_back convert a value into a pair
+    // vec.emplace_back(10,11);
+    //
+    // for (pair<int,int> p : vec) {
+    //     cout << p.first << " " << p.second << endl;
+    // }
+    // cout << endl;
 
 
 
