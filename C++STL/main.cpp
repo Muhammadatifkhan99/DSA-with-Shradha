@@ -5,6 +5,8 @@
 #include<stack>
 #include<queue>
 #include<map>
+#include<unordered_map>
+
 
 
 
@@ -13,28 +15,37 @@ using namespace std;
 
 
 int main() {
-    map<string,int> m;
+    unordered_map<string,int> m;
 
-    m["tv"] = 100;
-    m["laptop"] = 50;
-    m["headphones"] = 25;
+    m.emplace("tv",21);
+    m.emplace("laptop ",23);
+    m.emplace("headphones", 34);
+    m.emplace("fridge", 56);
+    m.emplace("shoes",67);
+    // m.erase(m.find("tv"));
 
-    m.insert({"camera", 22});
-    m.emplace("watches", 129);
-    for (auto p: m) {
-        cout<< p.first << " " << p.second << endl;
+    for (auto val: m) {
+        cout<< val.first << " " << val.second << endl;
     }
-    cout << "Count : " << m.count("camera") << endl;
 
-    string str {""};
-    cout << "Enter the name to search in map: " << endl;
-    cin >> str;
 
-    if (m.find(str) != m.end()) {
-        cout << str << " found in map " << endl;
-    } else {
-        cout << "Not Found" << endl;
-    }
+    //
+    // m.insert({"camera", 22});
+    // m.emplace("watches", 129);
+    // for (auto p: m) {
+    //     cout<< p.first << " " << p.second << endl;
+    // }
+    // cout << "Count : " << m.count("camera") << endl;
+    //
+    // string str {""};
+    // cout << "Enter the name to search in map: " << endl;
+    // cin >> str;
+    //
+    // if (m.find(str) != m.end()) {
+    //     cout << str << " found in map " << endl;
+    // } else {
+    //     cout << "Not Found" << endl;
+    // }
 
 
 
