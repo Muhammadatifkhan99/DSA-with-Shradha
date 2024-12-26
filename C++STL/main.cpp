@@ -11,17 +11,21 @@ using namespace std;
 
 
 int main() {
-    queue<int> q;
+    priority_queue<int> q;
 
-    q.push(1);
-    q.push(2);
-    q.push(3);
+    //building a reverse priority_queue
+    priority_queue<int, vector<int>,greater<int>> q1;
 
-    while (!q.empty()) {
-        cout << q.front() << endl;
-        q.pop();
+
+    q1.push(10);
+    q1.push(4);
+    q1.push(5);
+    q1.push(3);
+
+    while (!q1.empty()) {
+        cout << q1.top() << " ";
+        q1.pop();
     }
-    cout<< endl;
 
     //  stack<int> s;
     //
