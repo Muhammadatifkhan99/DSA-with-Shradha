@@ -1,3 +1,4 @@
+#include <algorithm>
 #include<iostream>
 #include<vector>
 #include<list>
@@ -17,42 +18,72 @@ using namespace std;
 
 
 int main() {
-    unordered_set<int> us;
+    int n {14};
+    int n1 {4545};
+    int n2 {3421332};
 
-    us.insert(1);
-    us.insert(2);
-    us.insert(3);
-    us.insert(4);
-    us.insert(5);
-    us.insert(1);
-    us.insert(2);
+    cout<< __builtin_popcount(n) << endl;
+    cout << __builtin_popcountl(n1) << endl;
+    cout << __builtin_popcountll(n2) << endl;
 
-    cout<< "The size of this unordered set s is: "<< us.size() << endl;
-    for (auto val: us) {
-        cout<< val << " ";
-    }
-    cout<<endl;
 
-    //data is sorted but duplicates are allowed
-    multiset<int> s;
 
-    s.insert(1);
-    s.insert(2);
-    s.insert(3);
-    s.insert(4);
-    s.insert(5);
 
-    s.insert(1);
-    s.insert(2);
-    cout << "The upper bound for this multi set is: " << *(s.upper_bound(4)) << endl;
-    cout << "The lower bound for this multi set is: " << *(s.lower_bound(4)) << endl;
 
-    cout<< "The size of this multi set s is: "<< s.size() << endl;
-    // m.erase(m.find("tv"));
+    // int arr[5] = {1,4,2,3,5};
+    // vector<int> v {4,7,8,2,0,6,3,5};
+    // sort(v.begin(),v.end(),greater<int> ());
+    // sort(arr, arr + 5,greater<int> ());
+    // for (int val: arr) {
+    //     cout << val << endl;
+    // }
+    // cout << endl;
+    //
+    // for (int val: v) {
+    //     cout << val << endl;
+    // }
+    // cout << endl;
 
-    for (auto val: s) {
-        cout<< val << " ";
-    }
+
+
+
+
+    // unordered_set<int> us;
+    //
+    // us.insert(1);
+    // us.insert(2);
+    // us.insert(3);
+    // us.insert(4);
+    // us.insert(5);
+    // us.insert(1);
+    // us.insert(2);
+    //
+    // cout<< "The size of this unordered set s is: "<< us.size() << endl;
+    // for (auto val: us) {
+    //     cout<< val << " ";
+    // }
+    // cout<<endl;
+    //
+    // //data is sorted but duplicates are allowed
+    // multiset<int> s;
+    //
+    // s.insert(1);
+    // s.insert(2);
+    // s.insert(3);
+    // s.insert(4);
+    // s.insert(5);
+    //
+    // s.insert(1);
+    // s.insert(2);
+    // cout << "The upper bound for this multi set is: " << *(s.upper_bound(4)) << endl;
+    // cout << "The lower bound for this multi set is: " << *(s.lower_bound(4)) << endl;
+    //
+    // cout<< "The size of this multi set s is: "<< s.size() << endl;
+    // // m.erase(m.find("tv"));
+    //
+    // for (auto val: s) {
+    //     cout<< val << " ";
+    // }
     //
     // m.insert({"camera", 22});
     // m.emplace("watches", 129);
