@@ -1,0 +1,3 @@
+/home/atif/Desktop/CP-Track/DSA-with-Shradha/PlindromeNumber/cmake-build-debug/CMakeFiles/PlindromeNumber.dir
+/home/atif/Desktop/CP-Track/DSA-with-Shradha/PlindromeNumber/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/atif/Desktop/CP-Track/DSA-with-Shradha/PlindromeNumber/cmake-build-debug/CMakeFiles/rebuild_cache.dir
