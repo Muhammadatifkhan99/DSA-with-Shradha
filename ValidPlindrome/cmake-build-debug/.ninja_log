@@ -1,0 +1,11 @@
+# ninja log v6
+1	438	1735549145167757617	CMakeFiles/ValidPlindrome.dir/main.cpp.o	c95e7c93a0b0fd31
+438	489	1735549145604738820	ValidPlindrome	dd52f5deab6acb5
+1	310	1735549200310835199	CMakeFiles/ValidPlindrome.dir/main.cpp.o	c95e7c93a0b0fd31
+310	358	1735549200619826653	ValidPlindrome	dd52f5deab6acb5
+1	284	1735549324767066950	CMakeFiles/ValidPlindrome.dir/main.cpp.o	c95e7c93a0b0fd31
+284	332	1735549325050073395	ValidPlindrome	dd52f5deab6acb5
+2	278	1735549397903546968	CMakeFiles/ValidPlindrome.dir/main.cpp.o	c95e7c93a0b0fd31
+278	341	1735549398179551914	ValidPlindrome	dd52f5deab6acb5
+2	278	1735549605007309872	CMakeFiles/ValidPlindrome.dir/main.cpp.o	c95e7c93a0b0fd31
+278	326	1735549605283312582	ValidPlindrome	dd52f5deab6acb5
