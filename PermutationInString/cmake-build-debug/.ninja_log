@@ -1,0 +1,10 @@
+# ninja log v6
+1	54	1735639107104663692	build.ninja	78d5a9d248e708a8
+2	547	1735639107115663823	CMakeFiles/PermutationInString.dir/main.cpp.o	ae80e728be1e3e28
+547	622	1735639107660670315	PermutationInString	2e02e58b58c9c0e9
+1	538	1735639137989018024	CMakeFiles/PermutationInString.dir/main.cpp.o	ae80e728be1e3e28
+538	610	1735639138526023941	PermutationInString	2e02e58b58c9c0e9
+2	466	1735639422828208585	CMakeFiles/PermutationInString.dir/main.cpp.o	ae80e728be1e3e28
+467	597	1735639423292210863	PermutationInString	2e02e58b58c9c0e9
+3	847	1735639624189911589	CMakeFiles/PermutationInString.dir/main.cpp.o	ae80e728be1e3e28
+847	996	1735639625034913482	PermutationInString	2e02e58b58c9c0e9
