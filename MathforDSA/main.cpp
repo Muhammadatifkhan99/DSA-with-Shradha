@@ -124,10 +124,15 @@ int euclidsalgorithm(int a,int b) {
     return a;
 }
 
+int gcdRec(int a,int b) {
+    if (b == 0) return a;
+    return gcdRec(b,a%b);
+}
 
 int main() {
     int a = 12;
     int b = 6;
+    cout << gcdRec(a,b) << endl;
     cout << euclidsalgorithm(a,b) << endl;
     cout << gcd(a,b) << endl;
 
