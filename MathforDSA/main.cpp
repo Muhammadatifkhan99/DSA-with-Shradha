@@ -129,9 +129,15 @@ int gcdRec(int a,int b) {
     return gcdRec(b,a%b);
 }
 
+int lcm(int a,int b) {
+    int gcd = euclidsalgorithm(a,b);
+    return (a * b) / gcd;
+}
+
 int main() {
-    int a = 12;
-    int b = 6;
+    int a = 28;
+    int b = 20;
+    cout << lcm(a,b) << endl;
     cout << gcdRec(a,b) << endl;
     cout << euclidsalgorithm(a,b) << endl;
     cout << gcd(a,b) << endl;
