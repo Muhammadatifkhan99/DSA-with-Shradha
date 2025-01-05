@@ -91,15 +91,55 @@ bool isArmstrong(int n) {
     return copyN == sumCubes;
 }
 
+int gcd(int a,int b) {
+    int gcd {1};
+    if (a == 0) {
+        gcd = b;
+    }
+    // else if (a == b) {
+    //     gcd = a;
+    // }
+    else {
+        gcd = a;
+    }
+    for (int i{1};i<= min(a,b);i++) {
+        if (a % i == 0 && b % i == 0) {
+            gcd = i;
+        }
+    }
+    return gcd;
+}
+
+int euclidsalgorithm(int a,int b) {
+
+    while (a > 0 && b > 0) {
+        if (a > b) {
+            a = a % b;
+        } else
+            b = b % a;
+    }
+    if ( a == 0) {
+        return b;
+    }
+    return a;
+}
+
 
 int main() {
+    int a = 12;
+    int b = 6;
+    cout << euclidsalgorithm(a,b) << endl;
+    cout << gcd(a,b) << endl;
+
+
+
     int n = 153;
 
-    if (isArmstrong(n)) {
-        cout << n << " is an Armstrong Number" << endl;
-    } else {
-        cout << n << " is not armstrong number" << endl;
-    }
+    // if (isArmstrong(n)) {
+    //     cout << n << " is an Armstrong Number" << endl;
+    // } else {
+    //     cout << n << " is not armstrong number" << endl;
+    // }
 
     // countdigits(n);
     // sumOfDigits(n);
