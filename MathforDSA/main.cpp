@@ -48,14 +48,21 @@ int sieveofErathosthene(int n) {
     return count;
 }
 
-
+void printDigits(int n) {
+    while (n > 0) {
+        int digit = n % 10;
+        cout << digit << endl;
+        n = n / 10;
+    }
+}
 
 
 int main() {
-    int n = 50;
+    int n = 3586;
+    printDigits(n);
     // cout << primeNum(n) << endl;
-    cout << primeNumforRange(n) << endl;
-    cout <<sieveofErathosthene(n) << endl;
+    // cout << primeNumforRange(n) << endl;
+    // cout <<sieveofErathosthene(n) << endl;
 
 
     return 0;
