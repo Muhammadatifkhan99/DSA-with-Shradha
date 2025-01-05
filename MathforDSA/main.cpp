@@ -2,6 +2,7 @@
 #include<string>
 #include<sstream>
 #include<vector>
+#include<cmath>
 
 
 using namespace std;
@@ -79,11 +80,30 @@ void sumOfDigits(int n) {
     cout << sum << endl;
 }
 
+bool isArmstrong(int n) {
+    int copyN = n;
+    int sumCubes {0};
+    while (n != 0) {
+        int digit = n % 10;
+        sumCubes = sumCubes + (digit * digit * digit);
+        n = n / 10;
+    }
+    return copyN == sumCubes;
+}
+
 
 int main() {
-    int n = 3586;
-    countdigits(n);
-    sumOfDigits(n);
+    int n = 153;
+
+    if (isArmstrong(n)) {
+        cout << n << " is an Armstrong Number" << endl;
+    } else {
+        cout << n << " is not armstrong number" << endl;
+    }
+
+    // countdigits(n);
+    // sumOfDigits(n);
+    // cout << (int)(log10(n) + 1) << endl;
     // cout << primeNum(n) << endl;
     // cout << primeNumforRange(n) << endl;
     // cout <<sieveofErathosthene(n) << endl;
