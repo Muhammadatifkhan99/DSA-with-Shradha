@@ -56,10 +56,34 @@ void printDigits(int n) {
     }
 }
 
+//count the number of digits in integer
+
+void countdigits(int n) {
+    int count {0};
+    while (n != 0) {
+        int digit = n % 10;
+
+        n = n / 10;
+        count ++;
+    }
+    cout << count << endl;
+}
+
+void sumOfDigits(int n) {
+    int sum {0};
+    while (n != 0) {
+        int digit = n % 10;
+        sum = sum + digit;
+        n = n / 10;
+    }
+    cout << sum << endl;
+}
+
 
 int main() {
     int n = 3586;
-    printDigits(n);
+    countdigits(n);
+    sumOfDigits(n);
     // cout << primeNum(n) << endl;
     // cout << primeNumforRange(n) << endl;
     // cout <<sieveofErathosthene(n) << endl;
