@@ -3,6 +3,7 @@
 #include<sstream>
 #include<vector>
 #include<cmath>
+#include <limits.h>
 
 
 using namespace std;
@@ -134,13 +135,31 @@ int lcm(int a,int b) {
     return (a * b) / gcd;
 }
 
+int reverseNum(int n) {
+    int revNum = {0};
+    while (n != 0) {
+        int digit = n % 10;
+        if (revNum > INT_MAX/10 || revNum < INT_MIN/10) {
+            return 0;
+        }
+        revNum = revNum * 10 + digit;
+        n = n / 10;
+    }
+    return revNum;
+}
+
 int main() {
-    int a = 28;
-    int b = 20;
-    cout << lcm(a,b) << endl;
-    cout << gcdRec(a,b) << endl;
-    cout << euclidsalgorithm(a,b) << endl;
-    cout << gcd(a,b) << endl;
+    int x = 4537;
+    cout << reverseNum(x) << endl;
+
+
+
+    // int a = 28;
+    // int b = 20;
+    // cout << lcm(a,b) << endl;
+    // cout << gcdRec(a,b) << endl;
+    // cout << euclidsalgorithm(a,b) << endl;
+    // cout << gcd(a,b) << endl;
 
 
 
