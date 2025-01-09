@@ -1,11 +1,12 @@
 #include<iostream>
+#include<vector>
 
 
 using namespace std;
 
 
 
-bool linearSearch(int matrix[][3],int &row,int &col,int &key) {
+bool linearSearch(int matrix[][3], const int &row,const int &col,const int &key) {
     for (int i{0};i<row;i++) {
         for (int j{0};j<col;j++) {
             if (matrix[i][j] == key) {
@@ -17,7 +18,6 @@ bool linearSearch(int matrix[][3],int &row,int &col,int &key) {
 }
 
 pair<int,int> linearSearchPair(int matrix[][3],int row,int col,int key) {
-    pair<int,int> p1 = {0,0};
     for (int i{0};i<row;i++) {
         for (int j{0};j<col;j++) {
             if (matrix[i][j] == key) {
@@ -56,14 +56,63 @@ int maxColSum(int matrix[][3],int row, int col) {
     return maxSum;
 }
 
+int diagonalSum(int matrix[][4], int n) {
+    int sum {0};
+    for (int i{0};i< n;i++) {
+        for (int j{0};j< n;j++) {
+            if (i == j) {
+                sum += matrix[i][j];
+            } else if (j == n-i-1) {
+                sum += matrix[i][j];
+            }
+        }
+    }
+    return sum;
+}
+int optimizedDiagonalSum(int matrix[][4], int n) {
+    int sum {0};
+    for (int i{0};i< n;i++) {
+        sum += matrix[i][i];
+        if (i != n - i -1) {
+            sum += matrix[i][n - i - 1];
+        }
+    }
+    return sum;
+}
+
 int main() {
+    vector<vector<int>> mat = {{1,2,3},{4,5,6},{7,8,9}};
 
-    int matrix [][3] = {{1,9,3},{4,5,6},{7,8,9}};
-    int row = 3;
-    int col = 3;
+    cout << mat[1][2] << endl;
 
-    cout << maxRowSum(matrix,row,col) << endl;
-    cout << maxColSum(matrix,row,col) << endl;
+    cout << mat.size() << endl;
+    cout << mat[1].size() << endl;
+
+    for (int i{0};i<mat.size();i++) {
+        for (int j{0};j<mat[i].size();j++) {
+            cin >> mat[i][j];
+        }
+        cout << endl;
+    }
+
+    for (int i{0};i<mat.size();i++) {
+        for (int j{0};j<mat[i].size();j++) {
+            cout << mat[i][j] << " " ;
+        }
+        cout << endl;
+    }
+
+
+
+
+    // int matrix [][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+    // // int row = 4;
+    // // int col = 4;
+    // int n = 4;
+
+    // cout << maxRowSum(matrix,row,col) << endl;
+    // cout << maxColSum(matrix,row,col) << endl;
+    // cout << diagonalSum(matrix,n) << endl;
 
 
     // cout << linearSearch(matrix,row,col,target);
