@@ -5,7 +5,7 @@ using namespace std;
 
 
 vector<int> spiralOrder(vector<vector<int>> mat) {
-    int m = mat[0].size(), n = mat.size();
+    int n = mat[0].size(), m = mat.size();
     int srow = 0;
     int erow = m - 1;
     int scol = 0;
@@ -18,16 +18,22 @@ vector<int> spiralOrder(vector<vector<int>> mat) {
             ans.push_back(mat[srow][j]);
         }
         //right
-        for (int i = erow; i<= erow;i++) {
+        for (int i = erow + 1; i<= erow;i++) {
             ans.push_back(mat[i][ecol]);
         }
 
         //bottom
         for (int j = ecol - 1; j>= scol;j--) {
+            if (srow == erow) {
+                break;
+            }
             ans.push_back(mat[erow][j]);
         }
         //left
-        for (int j = erow + 1; j>= srow + 1;j--) {
+        for (int j = erow - 1; j>= srow + 1;j--) {
+            if (scol == ecol) {
+                break;
+            }
             ans.push_back(mat[j][scol]);
         }
         srow ++;
@@ -43,7 +49,10 @@ vector<int> spiralOrder(vector<vector<int>> mat) {
 
 
 int main() {
-    vector<vector<int>> mat =
+    vector<vector<int>> mat = {{1,2,3},{4,5,6},{7,8,9}};
+    for (int val: spiralOrder(mat)) {
+        cout << val << endl;
+    }
 
 
 
