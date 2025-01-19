@@ -51,6 +51,11 @@ vector<int> twoSums (vector<int> arr,int target) {
         int first = arr[i];
         int second = target - first;
         //checks if the key exists in the array or vector
+        // m.find(sec) != m.end():
+        // Checks whether the iterator returned by m.find(sec) is not equal to m.end().
+        // This is effectively checking if the key sec exists in the map.
+
+
         if (m.find(second) != m.end()) {
             ans.push_back(i);
             ans.push_back(m[second]);
