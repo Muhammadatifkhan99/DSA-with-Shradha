@@ -6,9 +6,12 @@ using namespace std;
 
 bool search2DMat(vector<vector<int>> &mat,int target) {
     int r {0};
+    //n is columns
     int n = mat[0].size();
+    //m is number of rows
+    int m = mat.size();
     int c = n - 1;
-    while (r <= c) {
+    while (r <= m && c >= 0) {
         if (target == mat[r][c] ) {
             return true;
         } else if (target < mat[r][c]) {
