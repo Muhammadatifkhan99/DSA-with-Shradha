@@ -30,12 +30,48 @@ vector<vector<int>> threeSumbf(vector<int> &nums) {
     return ans;
 }
 
+//using hashing algorithms
+vector<vector<int>> threeSumhashing(vector<int> &nums) {
+    vector<vector<int>> ans;
+    int n = nums.size();
+    set<vector<int>> uniqueSet;
+
+    for (int i{0};i<n;i++) {
+        int target = nums[i];
+        set<int> s;
+        for (int j={i+1};j<n;j++) {
+            int third = target - nums[j];
+            if (s.find(third) != s.end()) {
+                vector<int> trip = {nums[i], nums[j], target};
+                sort(trip.begin(),trip.end());
+                uniqueSet.insert(trip);
+            }
+            s.insert(nums[j]);
+        }
+    }
+    return ans;
+}
+
+//most optimized approach
+
+// coded on leetcode
+
+
+
 int main() {
     vector<int> nums = {-1,0,1,2,-1,-4};
     vector<vector<int>> threesum = threeSumbf(nums);
 
     cout << "The triplets whose sum is equal to 0: ";
     for (auto val: threesum) {
+        for (auto el:val) {
+            cout << el << " " ;
+        }
+    }
+    cout << endl;
+    vector<vector<int>> threesumhashing = threeSumbf(nums);
+    cout << "The triplets whose sum is equal to 0: ";
+    for (auto val: threesumhashing) {
         for (auto el:val) {
             cout << el << " " ;
         }
