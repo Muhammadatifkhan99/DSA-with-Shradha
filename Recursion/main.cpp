@@ -23,11 +23,26 @@ int factorial(int n) {
 
     return n * factorial(n - 1);
 }
+\
+
+//recursive sum
+
+int sumN(int n) {
+    if (n == 0) {
+        return 0;
+    }
+    // if (n == 1) {
+    //     return 1;
+    // }
+
+    return n + sumN(n - 1);
+}
 
 int main() {
     // printNum(50);
 
-    cout << factorial(-12) << endl;
+    // cout << factorial(-12) << endl;
 
+    cout << sumN(4) << endl;
     return 0;
 }
