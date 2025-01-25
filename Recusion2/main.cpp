@@ -20,11 +20,32 @@ bool isSorted(vector<int> &arr, int n) {
 }
 
 //binary search using recursion
+int binarySearch(vector<int> arr, int tar, int start, int end) {
+    if (start <= end) {
+        int mid = start + (end - start)/2;
 
+        if (arr[mid] == tar) {
+            return arr[mid];
+        }
+        if (arr[mid] < tar) {
+            return binarySearch(arr,tar,mid+1, end);
+        }
+        else {
+            return binarySearch(arr,tar,start,mid - 1);
+            //arr[mid] > tar
+        }
+    }
+    return -1;
+}
 
 int main() {
     vector<int> arr = {1,2,3,4,5};
+    int tar = 9;
+    int start = 0;
+    int end = arr.size() - 1;
     int n = 19;
+
+    cout << binarySearch(arr,tar,start,end) << endl;
 
     cout << "The array is sorted: " << isSorted(arr,arr.size()) << endl;
     // cout << "The fibonacci number for " << n << " is:" << fibonacci(n) << endl;
