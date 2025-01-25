@@ -1,3 +1,4 @@
+#include <algorithm>
 #include<iostream>
 #include<vector>
 
@@ -37,17 +38,54 @@ int binarySearch(vector<int> arr, int tar, int start, int end) {
     }
     return -1;
 }
+void sortVector(vector<int> &v) {
+    sort(v.begin(),v.end());
+}
 
 int main() {
-    vector<int> arr = {1,2,3,4,5};
-    int tar = 9;
-    int start = 0;
-    int end = arr.size() - 1;
-    int n = 19;
+    int n = 0;
+    cin >> n;
+    vector<int> v(n);
 
-    cout << binarySearch(arr,tar,start,end) << endl;
+    for(int i{0};i<n;i++){
+        cin >> v[i];
+        // v.push_back(v[i]);
+    }
+    sortVector(v);
+    for (int i{0};i<n;i++) {
+        cout << v[i] << " " ;
+    }
+    // Complete the program
+    string a = "";
+    string b = "";
+    cin >> a;
+    cin >> b;
 
-    cout << "The array is sorted: " << isSorted(arr,arr.size()) << endl;
+    cout <<a.length()<< " " << b.length()<< endl;
+    cout << a + b << endl;
+
+    char ofa = b[0];
+    b[0] = a[0];
+    a[0] = ofa;
+
+    cout << a << " " << b << endl;
+
+    return 0;
+}
+
+    // cout << v[1] << endl;
+    // cout
+
+
+    // vector<int> arr = {1,2,3,4,5};
+    // int tar = 9;
+    // int start = 0;
+    // int end = arr.size() - 1;
+    // int n = 19;
+    //
+    // cout << binarySearch(arr,tar,start,end) << endl;
+    //
+    // cout << "The array is sorted: " << isSorted(arr,arr.size()) << endl;
     // cout << "The fibonacci number for " << n << " is:" << fibonacci(n) << endl;
 
 
