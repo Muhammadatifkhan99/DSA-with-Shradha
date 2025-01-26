@@ -42,6 +42,8 @@ vector<vector<int>> subsets(vector<int>& nums) {
 
     return allSubsets;
 }
+//problem subsets 2
+
 
 int main() {
     vector<int> arr {1,2,3};
