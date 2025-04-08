@@ -3,16 +3,27 @@
 using namespace std;
 
 int main() {
-    //VECTORS
+    int a = 2;
+    int b = 4;
 
+    if (a > b) {
+        cout << "a is greater then b in this case"<<endl;
+    } else if (b > a) {
+        cout << "b is greater then a in this case" <<endl;
+    } else {
+        cout <<"a and b are equal in this case"<<endl;
+    }
+
+    //VECTORS
+    cout << "Hello World"<<endl;
     //ARRAYS
-    float n[3] = {12.3,3.3,0.2};
+//    float n[3] = {12.3,3.3,0.2};
     // const string s = "atif";
     // cout << s << endl;
     // int index {0};
     // cin >> index;
     // cout<<n[index]<<endl;
-    cout<<n[0]<<endl;
+//    cout<<n[0]<<endl;
 
 
 
