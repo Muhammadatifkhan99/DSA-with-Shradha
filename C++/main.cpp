@@ -60,6 +60,25 @@ int main() {
     cout <<"Sum of numbers from 1 to "<<ns<<" is: " <<summ <<endl;
 
 
+    cout<<"Check if a number is prime or not"<<endl;
+    cout << boolalpha;
+    int primeNum {8};
+    bool isPrime = true;
+    for (int i{2};i*i<=primeNum -1;i++) { //checks till the square root of that number and then stop the loop, a little optimization
+        if (primeNum % i ==0) {
+            isPrime = false;
+            break;
+        }
+    }
+    // cout << primeNum <<" is prime or non-prime: "<<isPrime << endl;
+
+    if (isPrime) {
+        cout << primeNum << " is a prime number"<<endl;
+    } else {
+        cout <<primeNum << " is a non-prime number"<<endl;
+    }
+
+
 
     //VECTORS
     // cout << "Hello World"<<endl;
