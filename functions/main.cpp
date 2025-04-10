@@ -95,10 +95,10 @@ int binaryToDecimal(int decNum){
     int ans{};
     int pow{1};
     while(decNum > 0){
-        int rem = decNum % 10;
-        decNum /= 10;
-        ans += (rem*pow);
-        pow *= 2;
+        int rem = decNum % 10; //101 => 101 % 10 = 1 , 10%10 = 0, 1 % 10 = 1
+        decNum /= 10; //    101/10 => 10, 1, 0
+        ans += (rem*pow); // ans = 0 + (1 * 1), ans = 1, ans = ans + (0 * 2), ans = 1
+        pow *= 2;   // pow = 1 * 2, pow = 2, pow = 0 * 2, pow = 0
     }
     return ans;
 }
