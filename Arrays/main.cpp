@@ -1,3 +1,4 @@
+#include <climits>
 #include <iostream>
 using namespace std;
 
@@ -28,11 +29,11 @@ void reverseArray(int arr[],int size){
 }
 
 int sumOfArray(int arr[],int size){
-    int add{0};
+    int summation{0};
     for (int i = 0; i < size; i++) {
-        add += arr[i];
+        summation += arr[i];
     }
-    return add;
+    return summation;
 }
 
 int productOfArray(int arr[],int size){
@@ -43,22 +44,50 @@ int productOfArray(int arr[],int size){
     return multiply;
 }
 int minOfArray(int arr[], int size){
-    int smallest = INT_MAX;
+    int smallest = INT_MAX; // +infinity in C++
     for(int i{0};i<size;i++){
+        // smallest = min(arr[i],smallest);
         if (arr[i] < smallest){
             smallest = arr[i];
         }
     }
     return smallest;
 }
-int maxOfArray(int arr[], int size){
-    int largest = INT_MIN;
+
+int indexOfMinOfArray(int arr[], int size){
+    int smallest = INT_MAX; // +infinity in C++
+    int index {0};
     for(int i{0};i<size;i++){
+        // smallest = min(arr[i],smallest);
+        if (arr[i] < smallest){
+            smallest = arr[i];
+            index = i;
+        }
+    }
+    return index;
+}
+
+int maxOfArray(int arr[], int size){
+    int largest = INT_MIN; // -infinity in C++
+    for(int i{0};i<size;i++){
+        // largest = max(arr[i],largest);
         if (arr[i] > largest){
             largest = arr[i];
         }
     }
     return largest;
+}
+int indexofMaxOfArray(int arr[], int size){
+    int largest = INT_MIN; // -infinity in C++
+    int index {0};
+    for(int i{0};i<size;i++){
+        // largest = max(arr[i],largest);
+        if (arr[i] > largest){
+            largest = arr[i];
+            index = i;
+        }
+    }
+    return index;
 }
 
 void uniqueValue(int arr[],int size){
@@ -86,6 +115,14 @@ void intersectionArray(int arr1[], int arr2[],int size){
 }
 
 int main() {
+    cout << "Arrays in C++" << endl;
+    int mark[5];
+    int price[] = {89,88,55,66,33};
+
+    for(int i{0};i<=5;i++){
+      cout << price[i] << endl;
+    }
+    cout << "Size of the array is: " << sizeof(price) << endl;
     int arr[] = {1,3,3,4,4,5,5,6,6,4};
     int arr2[] = {1,3,3,4,4,5,5,6,6,4};
     int size = (sizeof(arr)/4);
@@ -93,17 +130,18 @@ int main() {
 
     intersectionArray(arr,arr2,size);
 
-
-//    cout<<"The sum of the Array is: "<<sumOfArray(arr,size)<<endl;
-//    cout<<"The product of the Array is: "<<productOfArray(arr,size)<<endl;
-////    cout<<8*5*3<<endl;
-//    cout<<"The smallest value in the Array is: "<<minOfArray(arr,size)<<endl;
-//    cout<<"The largest value in the Array is: "<<maxOfArray(arr,size)<<endl;
-//    int smallest = minOfArray(arr,size);
-//    int largest = maxOfArray(arr,size);
-//    cout<<"Before Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
-//    swap(smallest,largest);
-//    cout<<"After Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
+    cout << "The index of Largest element in the Array is: " << indexofMaxOfArray(arr,size) << endl;
+    cout << "The index of the smallest element in the array is: " <<indexOfMinOfArray(arr,size) << endl;
+    cout<<"The sum of the Array is: "<<sumOfArray(arr,size)<<endl;
+    cout<<"The product of the Array is: "<<productOfArray(arr,size)<<endl;
+//    cout<<8*5*3<<endl;
+    cout<<"The smallest value in the Array is: "<<minOfArray(arr,size)<<endl;
+    cout<<"The largest value in the Array is: "<<maxOfArray(arr,size)<<endl;
+    int smallest = minOfArray(arr,size);
+    int largest = maxOfArray(arr,size);
+    cout<<"Before Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
+    swap(smallest,largest);
+    cout<<"After Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
 
 
     return 0;
