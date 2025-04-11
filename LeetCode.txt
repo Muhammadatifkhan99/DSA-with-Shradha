@@ -1,0 +1,4 @@
+1. Stock buy and sell problem
+2. container with most water
+3. product of array without self
+4. binary search algorithm
