@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     vector<int> vec = {1,2,3,4,5};
     vector<char> vector = {'a','b','c','d','e'};
-//    cout<<vec[0]<<endl;
+//  cout<<vec[0]<<endl;
 
     cout<<"The size of int vector is: "<<vec.size()<<endl;
     cout<<"The size of char vector is: "<<vector.size()<<endl;

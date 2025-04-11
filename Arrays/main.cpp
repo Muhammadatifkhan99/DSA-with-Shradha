@@ -99,6 +99,7 @@ void uniqueValue(int arr[],int size){
             }
         }
     }
+    //printing all the values of the Unique Array
     for (int (i) = 0; (i) < size; ++(i)) {
         if(unique[i] != 0){
             cout<<unique[i]<<endl;

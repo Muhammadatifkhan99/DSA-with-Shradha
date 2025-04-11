@@ -1,5 +1,5 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 #include <algorithm>
 
 using namespace std;
@@ -81,11 +81,32 @@ int mooreAlgorithm(vector<int> nums){
     else
         return -1;
 }
-int main() {
+
+vector<int> pairSum(vector<int> nums, int target){
+  vector<int> ans;
+  for(int i{0};i<nums.size();i++){
+    for(int j{i+1};j<nums.size();j++){
+      if(nums[i] == nums[j])
+          ans.push_back(i);
+          ans.push_back(j);
+          return ans;
+    }
+}
+
+
+
+
+int main(){
     int nums[] = {1,2,2,1,1,1,1};
     int size {6};
     vector<int> num = {1,2,3,4,5};
+//    int target = 7;
+//    vector<int> ans = pairSum(num,target);
+//    for(int val: ans){
+//      cout << val ;
+//    }
     cout<<mooreAlgorithm(num);
 
     return 0;
+}
 }
