@@ -4,7 +4,7 @@ using namespace std;
 
 
 //brute force appraoch
-int maxArea(vector<int> & height){
+int maxArea(vector<int>& height){
     int maxWater {0};
     for(int i=0;i<height.size();i++){
         for(int j=i+1;j<height.size();j++){
@@ -19,12 +19,12 @@ int maxArea(vector<int> & height){
     return maxWater;
 }
 
-//optimal solution
-int maxAreaa(vector<int> & height){
+//optimal solution using two pointer approach
+int maxAreaa(vector<int>& height){
     int maxWater {0};
-    int lp {0};
-    int size = height.size();
-    int rp {size - 1};
+    int lp {0}; //left pointer
+    int size = height.size(); //calculate the size of vector
+    int rp {size - 1}; //right pointer starts at n - 1;
     while(lp < rp){
         //calculate the width
         int width = rp - lp;
@@ -38,8 +38,8 @@ int maxAreaa(vector<int> & height){
 
 int main() {
 
-    vector<int> height {1,2,3,7,5,9,3,6,4,9};
-    cout<<maxAreaa(height)<<endl;
-    cout<<maxAreaa(height)<<endl;
+    vector<int> lengths {1,2,3,7,5,9,3,6,4,9};
+    cout<<maxAreaa(lengths)<<endl;
+    cout<<maxAreaa(lengths)<<endl;
     return 0;
 }
