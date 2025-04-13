@@ -60,7 +60,7 @@ vector<int> productofArrayOS(vector<int> nums){
     for(int i{1};i<n;i++){
         ans[i] = ans[i - 1] * nums[i - 1];
     }
-    cout <<"The ans vector before adding the suffix part: " << endl;
+    cout <<"The ans vector before after: " << endl;
     for(int val: ans){
         cout << val << endl;
     }
