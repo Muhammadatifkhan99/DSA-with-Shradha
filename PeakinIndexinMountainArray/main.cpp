@@ -1,7 +1,19 @@
 #include <iostream>
 #include<vector>
+#include <climits>
 
 using namespace std;
+
+
+//not acceptable because of O(n) time complexity
+int peakIndexInMountainArray(vector<int>& arr) {
+    int largest = INT_MIN;
+
+    for(int i=0;i<=arr.size();i++){
+        largest = max(largest,arr[i]);
+    }
+    return largest;
+}
 
 int peakIndex(vector<int>& nums){
     int s = 1;
@@ -21,7 +33,12 @@ int peakIndex(vector<int>& nums){
 int main() {
     vector<int> nums {0,3,5,8,9,5,2};
     cout<<peakIndex(nums)<<endl;
-    cout<<nums[peakIndex(nums)];
+    cout<<nums[peakIndex(nums)] << endl;
+
+    cout << "using new ftn: " << endl;
+    vector<int> arr = {0,2,1,0};
+    cout <<peakIndexInMountainArray(nums) << endl;
+    cout <<peakIndexInMountainArray(arr) << endl;
 
     return 0;
 }

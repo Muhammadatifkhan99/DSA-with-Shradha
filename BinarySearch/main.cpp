@@ -4,9 +4,9 @@
 using namespace std;
 
 int binarySearch(vector<int>& nums, int target){
-    int st{0};
-    int n = nums.size();
-    int end = n -1;
+    int st{0}; //start pointer
+    int n = nums.size(); // size of the array
+    int end = n -1; //ending pointer 
     while(st<=end){
 //        int mid = (st + end)/2;
         int mid = st + (end - st)/2;
