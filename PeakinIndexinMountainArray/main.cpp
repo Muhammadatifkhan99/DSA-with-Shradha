@@ -6,14 +6,14 @@ using namespace std;
 
 
 //not acceptable because of O(n) time complexity
-int peakIndexInMountainArray(vector<int>& arr) {
-    int largest = INT_MIN;
+// int peakIndexInMountainArray(vector<int>& arr) {
+//     int largest = INT_MIN;
 
-    for(int i=0;i<=arr.size();i++){
-        largest = max(largest,arr[i]);
-    }
-    return largest;
-}
+//     for(int i=0;i<=arr.size();i++){
+//         largest = max(largest,arr[i]);
+//     }
+//     return largest;
+// }
 
 int peakIndex(vector<int>& nums){
     int s = 1;
