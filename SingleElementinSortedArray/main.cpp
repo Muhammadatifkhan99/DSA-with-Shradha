@@ -11,6 +11,8 @@ int singleElement(vector<int>& A){
         if (A[mid - 1] != A[mid] && A[mid] != A[mid +1]){
             return A[mid];
         }
+        //identify if we have odd number of elements on even number of elements on left/right half
+        
         if(mid % 2 == 0){
             if(A[mid - 1] == A[mid]){
                 e = mid - 1;
