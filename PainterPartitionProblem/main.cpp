@@ -30,10 +30,10 @@ int minTimetoPaint(vector<int>& nums, int n, int m) {
     int ans =  -1;
     while (st < end) {
         int mid = st + (end - st)/2;
-        if (isPossible(nums, n, m, mid)) {
+        if (isPossible(nums, n, m, mid)) { //if this is the case move towards the left
             ans = mid;
             end = mid - 1;
-        } else
+        } else // move towards the right
             st = mid + 1;
     }
     return ans;
