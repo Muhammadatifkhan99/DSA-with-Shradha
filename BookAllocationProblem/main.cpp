@@ -2,6 +2,9 @@
 #include<vector>
 using namespace std;
 
+
+
+//helper function
 bool isValid(vector<int> &nums,int n,int m,int mid) {
     int student = 1;
     int pages = 0;
@@ -18,6 +21,9 @@ bool isValid(vector<int> &nums,int n,int m,int mid) {
     }
     return student>m ? false : true;
 }
+
+//main function
+
 
 int bookAllocation(vector<int> &nums,int n,int m) {
     if (m > n) {
