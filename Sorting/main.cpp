@@ -6,10 +6,15 @@ using namespace std;
 
 void bubbleSort(int nums[], int n) {
     for (int i{0};i<n-1;i++) {
+        bool isSwap = false;
         for (int j = 0;j<n-1-i;j++) {
             if (nums[j] > nums[j+1]) {
                 swap(nums[j],nums[j+1]);
+                isSwap = true;
             }
+        }
+        if (!isSwap) { //if there is not swap just return from the function
+            return;
         }
     }
 }
