@@ -27,14 +27,17 @@ void sorting(vector<int> &nums) {
     int index{0};
     for (int i{0};i<=countofzero;i++) {
         nums[index] = 0;
+        index ++;
     }
     for (int i{0};i<=countofone;i++) {
         nums[index] = 1;
+        index ++;
     }
     for (int i{0};i<=countoftwos;i++) {
         nums[index] = 2;
+        index ++;
     }
-    printArray(nums);
+    // printArray(nums);
 }
 
 void dnfSorting(vector<int> &nums) {
@@ -45,8 +48,9 @@ void dnfSorting(vector<int> &nums) {
     while (mid <= high) {
         if (nums[mid] == 0) {
             swap(nums[low],nums[mid]);
+            mid ++, low ++;
         } else if (nums[mid] == 1) {
-            mid = mid ++;
+            mid++;
         } else {
             swap(nums[high], nums[mid]);
             high --;
@@ -59,5 +63,11 @@ void dnfSorting(vector<int> &nums) {
 int main() {
     vector<int> nums {2,0,2,1,1,0,1,2,0,0};
     dnfSorting(nums);
+    cout << "Sorting using Pure DNF: " << endl;
+    printArray(nums);
+    cout << endl;
+    cout << "Sorting using an Optimized Solution: " << endl;
+    sorting(nums);
+    printArray(nums);
     return 0;
 }
