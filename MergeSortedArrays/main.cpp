@@ -7,12 +7,9 @@ using namespace std;
 vector<int> merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
     //for array nums2
     int j = n - 1;
-
     //for array nums1
     int i = m - 1;
-
     int index = m + n - 1;
-
     while(i >= 0 && j>= 0){
         if(nums1[i] >= nums2[j]){
             nums1[index] = nums1[i];

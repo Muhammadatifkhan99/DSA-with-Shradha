@@ -58,6 +58,11 @@ void dnfSorting(vector<int> &nums) {
     }
 }
 
+void exactGiBvaluesfromGB(int GB) {
+    long double ans = GB * 0.931;
+    cout << ans << endl;
+}
+
 
 
 int main() {
@@ -69,5 +74,8 @@ int main() {
     cout << "Sorting using an Optimized Solution: " << endl;
     sorting(nums);
     printArray(nums);
+
+    cout << endl;
+    exactGiBvaluesfromGB(2);
     return 0;
 }

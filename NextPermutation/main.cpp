@@ -7,14 +7,17 @@ using namespace std;
 
 void nextPermutation(vector<int> &nums) {
     int pivot = -1;
+    //calculate the size of the vector
     int n = nums.size();
     for (int i{n-2};i>=0;i--) {
         if (nums[i] > nums[i + 1]);
         pivot = i;
         break;
     }
+    //edge case if the permutation does not exists
     if (pivot == -1) {
         reverse(nums.begin(),nums.end());
+        return;
     }
     //finding the rightmost element smaller than the pivot
     for (int i{n-1};i>=pivot;i--) {
@@ -42,6 +45,10 @@ int main() {
     for (int val: nums) {
         cout << " After the permutation: " << val << endl;
     }
+
+
+    // cout << "The size of the array: " << endl;
+    // cout << nums.size() << endl;
 
     return 0;
 }
