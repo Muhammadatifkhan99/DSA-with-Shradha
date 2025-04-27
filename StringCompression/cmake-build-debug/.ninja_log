@@ -1,0 +1,9 @@
+# ninja log v6
+1	659	1745769837771478029	CMakeFiles/StringCompression.dir/main.cpp.o	ffea5a569db586f2
+659	732	1745769838429483071	StringCompression	bcd35a108da999bf
+4	954	1745772187755793543	CMakeFiles/StringCompression.dir/main.cpp.o	ffea5a569db586f2
+954	1061	1745772188705732130	StringCompression	bcd35a108da999bf
+4	987	1745772645418764132	CMakeFiles/StringCompression.dir/main.cpp.o	ffea5a569db586f2
+987	1090	1745772646401728938	StringCompression	bcd35a108da999bf
+3	920	1745772662789147687	CMakeFiles/StringCompression.dir/main.cpp.o	ffea5a569db586f2
+920	1042	1745772663706115465	StringCompression	bcd35a108da999bf

@@ -26,6 +26,7 @@ int main() {
     string s = "the pen";
     cout << reverseString(s) << endl;
 
+    cout << "Length of a String: " << s.length() << endl; //length counts empty spaces as well.
 
     return 0;
 }

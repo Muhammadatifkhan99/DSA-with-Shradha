@@ -22,15 +22,20 @@ int main() {
     int n1 {4545};
     int n2 {3421332};
 
-    cout<< __builtin_popcount(n) << endl;
-    cout << __builtin_popcountl(n1) << endl;
-    cout << __builtin_popcountll(n2) << endl;
+    // cout<< __builtin_popcount(n) << endl;
+    // cout << __builtin_popcountl(n1) << endl;
+    // cout << __builtin_popcountll(n2) << endl;
 
 
 
 
 
     // int arr[5] = {1,4,2,3,5};
+    //create a vector of size 3 where every value is 10;
+    vector<int> vec (3,10);
+    for (int val: vec) {
+        cout << val << endl;
+    }
     // vector<int> v {4,7,8,2,0,6,3,5};
     // sort(v.begin(),v.end(),greater<int> ());
     // sort(arr, arr + 5,greater<int> ());
