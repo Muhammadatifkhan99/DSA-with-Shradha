@@ -36,7 +36,6 @@ string primeNumforRange(int N) {
 
 //return the count of the prime numbers from 1 to N
 int sieveofErathosthene(int n) {
-
     vector<bool> isPrime(n+1,true);
     int count {0};
     for (int i{2};i<n;i++) {
@@ -163,13 +162,14 @@ int main() {
 
 
 
-    int n = 153;
+    // int n = 153;
+    int n = 111;
 
-    // if (isArmstrong(n)) {
-    //     cout << n << " is an Armstrong Number" << endl;
-    // } else {
-    //     cout << n << " is not armstrong number" << endl;
-    // }
+    if (isArmstrong(n)) {
+        cout << n << " is an Armstrong Number" << endl;
+    } else {
+        cout << n << " is not an Armstrong number" << endl;
+    }
 
     // countdigits(n);
     // sumOfDigits(n);
