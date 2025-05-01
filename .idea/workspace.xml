@@ -19,15 +19,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef42ac2-37ea-4c04-90d4-b23fd58fac2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PlusOne/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlusOne/.idea/PlusOne.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlusOne/.idea/editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlusOne/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlusOne/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PlusOne/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MathforDSA/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MathforDSA/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StringCompression/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/StringCompression/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlusOne/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/PlusOne/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Searchin2DArray/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Searchin2DArray/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,13 +78,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="C/C++ File.main.cpp (3)">
-    <configuration name="main.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
-      <option name="sourceFile" value="C++STL/main.cpp" />
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="C/C++ File.main.cpp (4)">
     <configuration name="main.cpp (2)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="PermutationInString/main.cpp" />
       <method v="2">
@@ -99,6 +87,12 @@
     </configuration>
     <configuration name="main.cpp (3)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="MathforDSA/main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.cpp (4)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="Searchin2DArray/main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -116,19 +110,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="C/C++ File.main.cpp (4)" />
       <item itemvalue="C/C++ File.main.cpp (3)" />
       <item itemvalue="C/C++ File.main.cpp (5)" />
       <item itemvalue="C/C++ File.main.cpp (2)" />
-      <item itemvalue="C/C++ File.main.cpp (1)" />
       <item itemvalue="C/C++ File.main.cpp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.main.cpp (4)" />
         <item itemvalue="C/C++ File.main.cpp (3)" />
         <item itemvalue="C/C++ File.main.cpp (5)" />
         <item itemvalue="C/C++ File.main.cpp (2)" />
         <item itemvalue="C/C++ File.main.cpp" />
-        <item itemvalue="C/C++ File.main.cpp (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +148,9 @@
       <workItem from="1745678451990" duration="1668000" />
       <workItem from="1745730605488" duration="5818000" />
       <workItem from="1745852974747" duration="2663000" />
-      <workItem from="1745905205238" duration="4261000" />
+      <workItem from="1745905205238" duration="5557000" />
+      <workItem from="1745988103684" duration="14160000" />
+      <workItem from="1746099430583" duration="3321000" />
     </task>
     <servers />
   </component>
