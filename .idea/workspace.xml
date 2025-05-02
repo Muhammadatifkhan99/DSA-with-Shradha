@@ -20,9 +20,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ef42ac2-37ea-4c04-90d4-b23fd58fac2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlusOne/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/PlusOne/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Searchin2DArray/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Searchin2DArray/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TwoSum/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TwoSum/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +149,7 @@
       <workItem from="1745905205238" duration="5557000" />
       <workItem from="1745988103684" duration="14160000" />
       <workItem from="1746099430583" duration="3321000" />
+      <workItem from="1746159858332" duration="2962000" />
     </task>
     <servers />
   </component>

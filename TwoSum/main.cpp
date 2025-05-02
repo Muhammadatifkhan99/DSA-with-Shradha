@@ -55,12 +55,15 @@ vector<int> twoSums (vector<int> arr,int target) {
         // Checks whether the iterator returned by m.find(sec) is not equal to m.end().
         // This is effectively checking if the key sec exists in the map.
 
+        //if m.find(second) returns true( means a value is found in map) then it will not be equal to m.end() so the condition will be true and we
+        // execute the code inside the block
 
         if (m.find(second) != m.end()) {
             ans.push_back(i);
             ans.push_back(m[second]);
             break;
         }
+        ///this is storing the value as key and i as value, e.g m[5] = 0 will be add like 5 as key and 0 as value.
         m[first] = i;
     }
     return ans;
