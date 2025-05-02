@@ -12,14 +12,14 @@ vector<int> missingRepeatingValues(vector<vector<int>> grid) {
     int n = grid.size();
     //the sum of numbers from 1 to n given by the formula of (n*n)(n*n + 1)/2
     int expSum {0};
-    //the sum this array will actual give
+    //the sum this array will actually give
     int actualSum {0};
 
     //loops
     for (int i{0};i<n;i++) {
         for (int j{0};j<n;j++) {
             actualSum += grid[i][j];
-
+            //if the missing value is in the set, assign it to a and then push it to the vector, otherwise continue on insertion into set
             if (s.find(grid[i][j]) != s.end()) {
                 a = grid[i][j];
                 ans.push_back(a);
@@ -39,7 +39,5 @@ int main() {
     for (int val: missingRepeatingValues(grid)) {
         cout << val << endl;
     }
-
-
     return 0;
 }
