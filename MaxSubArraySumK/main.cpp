@@ -21,7 +21,6 @@ int maxSubArraySumK(vector<int> &arr, int tar) {
 }
 
 //most optimize solution to find the maxsub array
-
 int subarraySum(vector<int>& arr, int tar) {
     int n = arr.size();
     int count = 0;
@@ -48,16 +47,6 @@ int subarraySum(vector<int>& arr, int tar) {
         m[prefixSum[j]] ++;
     }
     return count;
-
-    // for(int i{0};i<n;i++){
-    //     int sum {0};
-    //     for(int j{i};j<n;j++){
-    //         sum += nums[j];
-    //         if(sum == tar){
-    //             count ++;
-    //         }
-    //     }
-    // }
 }
 
 
