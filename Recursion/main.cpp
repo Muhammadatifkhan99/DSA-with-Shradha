@@ -39,10 +39,10 @@ int sumN(int n) {
 }
 
 int main() {
-    // printNum(50);
+    printNum(50);
 
     // cout << factorial(-12) << endl;
 
-    cout << sumN(4) << endl;
+    cout << sumN(5) << endl;
     return 0;
 }
