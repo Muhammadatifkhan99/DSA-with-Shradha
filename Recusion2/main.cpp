@@ -42,6 +42,15 @@ void sortVector(vector<int> &v) {
     sort(v.begin(),v.end());
 }
 
+int fibonacci_binet(int n) {
+    double sqrt5 = sqrt(5);
+    double phi = (1 + sqrt5) / 2;
+    double psi = (1 - sqrt5) / 2;
+
+    double fib_n = (pow(phi, n) - pow(psi, n)) / sqrt5;
+    return round(fib_n);  // round to handle floating-point error
+}
+
 int main() {
     int n = 0;
     cin >> n;
@@ -89,5 +98,5 @@ int main() {
     // cout << "The fibonacci number for " << n << " is:" << fibonacci(n) << endl;
 
 
-    return 0;
-}
+//     return 0;
+// }

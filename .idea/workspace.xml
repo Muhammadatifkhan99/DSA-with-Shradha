@@ -20,8 +20,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ef42ac2-37ea-4c04-90d4-b23fd58fac2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recursion/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Recursion/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recusion2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Recusion2/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +153,7 @@
       <workItem from="1746179814545" duration="4171000" />
       <workItem from="1746259491601" duration="3763000" />
       <workItem from="1746341807113" duration="4719000" />
-      <workItem from="1746422996425" duration="2532000" />
+      <workItem from="1746422996425" duration="4996000" />
     </task>
     <servers />
   </component>
