@@ -46,16 +46,10 @@ vector<vector<int>> subsets(vector<int>& nums) {
 
 
 int main() {
-    vector<int> arr {1,2,3};
+    vector<int> arr {1,2};
     vector<int> ans;
 
     printSubsets(arr,ans,0);
-
-
-
-
-
-
 
     return 0;
 }
