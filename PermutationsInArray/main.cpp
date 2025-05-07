@@ -8,7 +8,7 @@ void getPerms(vector<int> &nums,int idx,vector<vector<int>> &ans) {
         ans.push_back({nums});
         return;
     }
-    for (int i{0};i<nums.size();i++) {
+    for (int i{idx};i<nums.size();i++) {
         swap(nums[idx],nums[i]);
         getPerms(nums,idx+1,ans);
         swap(nums[idx],nums[i]);
