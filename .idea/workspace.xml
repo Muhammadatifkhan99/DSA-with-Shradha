@@ -20,7 +20,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ef42ac2-37ea-4c04-90d4-b23fd58fac2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PermutationsInArray/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PermutationsInArray/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nQueensLeetCodeHard/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/nQueensLeetCodeHard/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="C/C++ File.main.cpp (2)">
+  <component name="RunManager" selected="C/C++ File.main.cpp (5)">
     <configuration name="main.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="Recursion/main.cpp" />
       <method v="2">
@@ -89,14 +89,14 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.cpp (3)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
-      <option name="sourceFile" value="MathforDSA/main.cpp" />
+    <configuration name="main.cpp (4)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="Searchin2DArray/main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.cpp (4)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
-      <option name="sourceFile" value="Searchin2DArray/main.cpp" />
+    <configuration name="main.cpp (5)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA-with-Shradha" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="nQueensLeetCodeHard/main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -108,19 +108,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="C/C++ File.main.cpp (5)" />
       <item itemvalue="C/C++ File.main.cpp (2)" />
       <item itemvalue="C/C++ File.main.cpp" />
       <item itemvalue="C/C++ File.main.cpp (1)" />
       <item itemvalue="C/C++ File.main.cpp (4)" />
-      <item itemvalue="C/C++ File.main.cpp (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.main.cpp (5)" />
         <item itemvalue="C/C++ File.main.cpp (2)" />
         <item itemvalue="C/C++ File.main.cpp" />
         <item itemvalue="C/C++ File.main.cpp (1)" />
         <item itemvalue="C/C++ File.main.cpp (4)" />
-        <item itemvalue="C/C++ File.main.cpp (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +155,8 @@
       <workItem from="1746341807113" duration="4719000" />
       <workItem from="1746422996425" duration="6323000" />
       <workItem from="1746510790623" duration="6004000" />
-      <workItem from="1746597919724" duration="2319000" />
+      <workItem from="1746597919724" duration="3140000" />
+      <workItem from="1746679687582" duration="1438000" />
     </task>
     <servers />
   </component>

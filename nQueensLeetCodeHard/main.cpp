@@ -1,7 +1,9 @@
-class Solution {
-public:
+#include <iostream>
 
-    bool isSafe(vector<vector<string>> &board,int row,int col,int n){
+using namespace std;
+
+
+bool isSafe(vector<vector<string>> &board,int row,int col,int n){
 
         for(int j{0};j<n;j++){
             if(board[row][j] == 'Q'){
@@ -33,7 +35,7 @@ public:
 
 
     void nQueens(vector<string> &board,int row,int n,vector<vector<string>> &ans){
-        if(row===n){
+        if(row==n){
             ans.push_back({board});
             return;
         }
@@ -47,12 +49,19 @@ public:
         }
     }
 
-    vector<vector<string>> solveNQueens(int n) {
-        vector<int> board(n,string(n,'.'));
+vector<vector<string>> solveNQueens(int n) {
+        vector<int> board(n,string(n,'.')); //initializing board of chess
         vector<vector<string>> ans;
 
         nQueens(board,0,n,ans);
 
         return ans;
     }
-};
+
+
+
+int main() {
+    int n = 4;
+
+    return 0;
+}
