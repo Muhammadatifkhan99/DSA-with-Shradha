@@ -20,8 +20,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ef42ac2-37ea-4c04-90d4-b23fd58fac2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backtracking/main" beforeDir="false" afterPath="$PROJECT_DIR$/Backtracking/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nQueensLeetCodeHard/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/nQueensLeetCodeHard/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NQeenDebugStyle/.idea/NQeenDebugStyle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NQeenDebugStyle/.idea/NQeenDebugStyle.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +157,7 @@
       <workItem from="1746510790623" duration="6004000" />
       <workItem from="1746597919724" duration="3140000" />
       <workItem from="1746679687582" duration="4143000" />
-      <workItem from="1746768814137" duration="1372000" />
+      <workItem from="1746768814137" duration="2327000" />
     </task>
     <servers />
   </component>
