@@ -17,8 +17,15 @@ void solve(double meal, int tip, int tax) {
     cout << ceil(totalCost) << endl;
 }
 
+void watchVideos(int *views) {
+    *views = *views + 1;
+}
+
 
 int main() {
+    int views = 100;
+    watchVideos(&views);
+    cout << views << endl;
 
     double a = 10.25;
     int b = 17;
@@ -31,8 +38,11 @@ int main() {
     // int **q = &p;
 
     //NULL POINTER -> a pointer that does not point at any valid location
-    int* nptr = NULL; // null pointers can not be dereferenced,as nullpointer do not point at any valid location/memory address
+    int* nptr = NULL;
+    int* nollptr = 0;// null pointers can not be dereferenced,as nullpointer do not point at any valid location/memory address
 
+    cout << "The nollptr: " << nollptr << endl;
+    // cout << *(nollptr) << endl; Segmentation fault but handled by Clion
     cout << nptr << endl;
 
     // int* ptr = &a;

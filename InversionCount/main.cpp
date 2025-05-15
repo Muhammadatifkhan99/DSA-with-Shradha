@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <iostream>
+#include <semaphore>
 #include<vector>
 
 using namespace std;
@@ -54,11 +55,26 @@ int mergeSort(vector<int> &arr, int start, int end) {
     return 0;
 }
 
+int countInversion(vector<int> &arr) {
+    int count = 0;
+    int end = arr.size() - 1;
+    for (int i=0;i<=end;i++) {
+        for (int j=i+1;j<=end;j++) {
+            if (arr[i] > arr[j]) {
+                count = count + 1;
+            }
+        }
+    }
+    return count;
+}
+
 //vectors are very important to be passed separatly by reference,by default they are passed as copy, while array are passed by reference.
 int main() {
     vector<int> arr = {6,3,5,2,7};
 
-    int ans = mergeSort(arr,0,arr.size()-1);
-    cout << ans  << endl;
+    // int ans = mergeSort(arr,0,arr.size()-1);
+    // cout << ans  << endl;
+
+    cout<< countInversion(arr) << endl;
     return 0;
 }
