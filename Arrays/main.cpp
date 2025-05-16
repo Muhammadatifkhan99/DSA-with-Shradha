@@ -18,6 +18,7 @@ int linearSearch(int arr[],int valueToFind, int size){
     return -1;
 }
 
+//inplace reversing an array
 void reverseArray(int arr[],int size){
     int start {0};
     int end {size -1};
@@ -25,6 +26,22 @@ void reverseArray(int arr[],int size){
         swap(arr[start],arr[end]);
         start ++;
         end --;
+    }
+}
+//inplace reversing arrays
+void reverseArrayPointer(int *arr,int size){
+    int start {0};
+    int end {size -1};
+    while(start < end){
+        swap(arr[start],arr[end]);
+        start ++;
+        end --;
+    }
+}
+
+void reverseArrayFL(int *arr,int n) {
+    for (int i=0;i<n;i++) {
+        cout << arr[n - 1 - i] << ",";
     }
 }
 
@@ -115,10 +132,23 @@ void intersectionArray(int arr1[], int arr2[],int size){
     }
 }
 
+void printArray(int arrr[]) {
+    cout << "Size of the array in function" << sizeof(arrr)/sizeof(int) << endl;
+
+    int nn = sizeof(arrr)/sizeof(int);
+
+    for (int i=0;i<nn;i++) {
+        cout << arrr[i] << ",";
+    }
+}
+
 int main() {
     cout << "Arrays in C++" << endl;
     int mark[5];
     int price[] = {89,88,55,66,33};
+    int n = sizeof(price)/sizeof(int);
+    cout << "Passing arrays to functions(Parteeg Narang)" << endl;
+    reverseArrayPointer(price,n);
 
     for(int i{0};i<=5;i++){
       cout << price[i] << endl;
@@ -143,6 +173,33 @@ int main() {
     cout<<"Before Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
     swap(smallest,largest);
     cout<<"After Swaping: Largest is: "<<largest<<", Smallest is:"<<smallest<<endl;
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///
+    ///
+    ///
+    ///
+    ///
+    ///
+    ///
+    ///
+    cout << "Current Code" << endl;
+    int arrr[] = {1,2,3,4,5,6};
+
+    reverseArrayFL(arrr,6);
+
+    // int nn = sizeof(arrr)/sizeof(int);
+    //
+    // cout << nn << endl;
+    //
+    // for (int i=0;i<nn;i++) {
+    //     cout << arrr[i] << ",";
+    // }
+    //
+    // printArray(arrr);
+
+
 
 
     return 0;
