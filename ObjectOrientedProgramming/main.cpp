@@ -3,78 +3,68 @@
 using namespace std;
 
 
-class Teacher {
-private:
-    double salary;
+// class Tea
+
+class Student {
 public:
-
-
-    //constructor
-    Teacher() {
-        cout << "I am a constructor" << endl;
-    }
-
-    //parameterized Contructors
-    // Teacher(string n,string d,string s,double sal) {
-    //     name = n;
-    //     depth = d;
-    //     subject = s;
-    //     sal = salary;
-    // }
-
-    //using the this pointer approach in constructor
-    Teacher(string name, string depth,string subject,double salary) {
-        this->name = name;
-        this->depth = depth;
-        this->subject = subject;
-        this->salary = salary;
-    }
-
-    //copy constructor
-    Teacher (Teacher &orgObj) {
-        cout << "Inside the copy constructor" << endl;
-        this->name = orgObj.name;
-        this->depth = orgObj.depth;
-        this->subject = orgObj.subject;
-        this->salary = orgObj.salary;
-    }
-
-
-
-
     string name;
-    string depth;
-    string subject;
+    double* cgpaptr;
 
-    //methods member functions
 
-    void changeDept(string newDept) {
-        depth = newDept;
+    Student(string name, double cgpa) {
+        this->name = name;
+        this->cgpaptr = new double;
+        *cgpaptr = cgpa;
     }
 
-    //setters
-    void setSalary(double s) {
-        salary = s;
+    Student(Student &obj) {
+        this->name = obj.name;
+        //to make a deep copy allocate memory on the heap
+        this->cgpaptr = new double;
+        //now to copy the value form one object ot another as it is dereference them
+        *cgpaptr = *(obj.cgpaptr); //store the value that is stored at the location of cgpaptr not the pointer, so we dereferenced it.
     }
-
-    //getters
-    double getSalary() {
-        return salary;
-    }
-
     void getInfo() {
-        cout <<"name: " << name << endl;
-        cout << "subject: " << subject << endl;
+        cout << "name: " << name << endl;
+        cout << "cgpa: " << *cgpaptr << endl;
     }
+
+
 };
 
 
 int main() {
-    Teacher t1("Atif","ComputerScienc","C++",25000);
-    t1.getInfo();
 
-    Teacher t3(t1);
-    t3.getInfo();
+
+
+    Student s1("Atif",3.4);
+
+    Student s2(s1);
+    s1.getInfo();
+    // ReSharper disable once CppDFANotInitializedField
+    *(s2.cgpaptr) = 4.32; //dereference the pointer and assigne the values there,
+    s1.getInfo();
+    s2.getInfo();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Teacher t1("Atif","ComputerScienc","C++",25000);
+    // t1.getInfo();
+    //
+    // Teacher t3(t1);
+    // t3.getInfo();
 
 
    // Teacher t2(t1); //make the exact copy of the orginal object using default copy constructor
