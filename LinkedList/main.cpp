@@ -46,17 +46,23 @@ public:
 
     void pop_front() {
         //check if the LL is already empty or not
-        if (head == NULL) {
+        if (head == NULL && tail == NULL) {
             return;
         }
         Node* temp = head; //temp is a pointer to a Node type, which is now pointing to head, where the two values are store, one is data and other is a pointer
         head = head->next;
-        temp = NULL; //store a null value at the temp pointer
+        //temp = NULL; //store a null value at the temp pointer
         delete temp;
     }
 
     void pop_back() {
         if (head == NULL) {
+            cout <<"Link List is empty\n" ;
+            return;
+        }
+        if (head == tail) {  // only one node
+            delete head;
+            head = tail = NULL;
             return;
         }
         Node* temp = head;
@@ -66,6 +72,29 @@ public:
         temp->next = NULL;
         delete tail;
         tail = temp;
+
+    }
+
+    void insert(int val, int pos) {
+        if (pos < 0) {
+            cout << "Invalid Postion\n";
+            return;
+        }
+        if (pos == 0) {
+            push_front(val);
+            return;
+        }
+        Node* temp = head;
+        for (int i=0;i<pos -1;i++) {
+            if (temp == NULL) {
+                cout << "Invalid Position\n";
+                return;
+            }
+            temp = temp->next;
+        }
+        Node* newNode = new Node(val);
+        newNode->next = temp->next;
+        temp->next = newNode;
     }
 
 
@@ -78,25 +107,30 @@ public:
         }
         cout << "NULL" << endl;
     }
+
+    int search(int key) {
+        Node* temp = head;
+        int index=0;
+        while (temp != NULL) {
+            if (temp->data == key) {
+                return index;
+            }
+            temp = temp->next;
+            index++;
+        }
+        return -1;
+    }
 };
 
 int main() {
     List ll;
 
-    ll.push_front(1);
-    ll.push_front(2);
     ll.push_front(3);
-    ll.push_back(5);
-    ll.push_back(8);
-    ll.printLL();
-
-
-    ll.pop_front();
-    ll.pop_front();
+    ll.push_front(2);
+    ll.push_front(1);
+    ll.insert(4,5);
 
     ll.printLL();
-    ll.pop_back();
-    ll.pop_back();
-    ll.printLL();
+    cout << ll.search(1) << endl;
     return 0;
 }
