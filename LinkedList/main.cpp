@@ -44,6 +44,31 @@ public:
     }
 
 
+    void pop_front() {
+        //check if the LL is already empty or not
+        if (head == NULL) {
+            return;
+        }
+        Node* temp = head; //temp is a pointer to a Node type, which is now pointing to head, where the two values are store, one is data and other is a pointer
+        head = head->next;
+        temp = NULL; //store a null value at the temp pointer
+        delete temp;
+    }
+
+    void pop_back() {
+        if (head == NULL) {
+            return;
+        }
+        Node* temp = head;
+        while (temp->next->next != NULL) {
+            temp = temp->next;
+        }
+        temp->next = NULL;
+        delete tail;
+        tail = temp;
+    }
+
+
     void printLL() {
         Node* temp = head; // we do not want to lose the head pointer, because in linkedlist we can only move forward..
 
@@ -63,7 +88,15 @@ int main() {
     ll.push_front(3);
     ll.push_back(5);
     ll.push_back(8);
+    ll.printLL();
 
+
+    ll.pop_front();
+    ll.pop_front();
+
+    ll.printLL();
+    ll.pop_back();
+    ll.pop_back();
     ll.printLL();
     return 0;
 }

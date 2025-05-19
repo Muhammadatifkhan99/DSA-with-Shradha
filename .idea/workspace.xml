@@ -19,8 +19,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef42ac2-37ea-4c04-90d4-b23fd58fac2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LinkedList/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedList/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
