@@ -140,23 +140,60 @@ public:
     Node* getHead() {
         return head;
     }
+    //brute force appraoch
+    Node* getMiddleNode() {
+        Node* temp = head;
+        int size = 0;
+
+        // First pass: Count the total number of nodes
+        while (temp != NULL) {
+            temp = temp->next;
+            size++;
+        }
+
+        // Reset temp to head
+        temp = head;
+
+        // Second pass: Traverse to the middle node
+        for (int i = 0; i < size / 2; i++) {
+            temp = temp->next;
+        }
+
+        return temp;  // This is the middle node
+    }
+    //optimized approach->the two pointer approach
+
+    Node* getMidSlowFast() {
+        Node* slow = head;
+        Node* fast = head;
+
+        while (fast != NULL && fast->next != NULL) {
+            fast = fast->next->next;
+        }
+        return slow;
+    }
+
+
 
 };
 
 int main() {
     List ll;
+    ll.push_back(1);
+    ll.push_back(2);
+    ll.push_back(3);
+    ll.push_back(4);
+    ll.push_back(5);
 
-    ll.push_front(3);
-    ll.push_front(2);
-    ll.push_front(1);
-    ll.insert(4,5);
-    ll.printLL();
+    Node* middle = ll.getMiddleNode();
+    if (middle != NULL) {
+        cout << "Middle node data: " << middle->data << endl;
+    }
+    cout <<"Using the slow fast pointer approach" << endl;
 
-
-
-
-    ll.printLL();
-    cout << ll.search(1) << endl;
-    cout << ll.reverseList(ll.getHead()) << endl;
+    Node* mid = ll.getMidSlowFast();
+    if (mid != NULL) {
+        cout << "Middle node data (Slow-Fast method): " << mid->data << endl;
+    }
     return 0;
 }
