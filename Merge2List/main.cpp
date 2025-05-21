@@ -150,6 +150,34 @@ public:
         tail->next = h1 ? h1 : h2;
         return dummy.next;
     }
+
+    Node* copyRandomList(Node* head) {
+        if(head == NULL){
+            return NULL;
+        }
+        unordered_map<Node*,Node*> m;
+        Node* newHead =new Node(head->val);
+        Node* oldTemp = head->next;
+        Node* newTemp = newHead;
+        m[head] = newHead;
+        while(oldTemp != NULL){
+            Node* CopyNode = new Node(oldTemp->val);
+            m[oldTemp] = CopyNode;
+            newTemp->next = CopyNode;
+            newTemp = newTemp->next;
+            oldTemp = oldTemp->next;
+        }
+
+        oldTemp = head;
+        newTemp = newHead;
+        while(oldTemp != NULL){
+            newTemp->random = m[oldTemp->random];
+            oldTemp = oldTemp->next;
+            newTemp = newTemp->next;
+        }
+        return newHead;
+
+    }
 };
 
 int main() {
