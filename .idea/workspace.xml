@@ -19,12 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef42ac2-37ea-4c04-90d4-b23fd58fac2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DoublyLInkList/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoublyLInkList/.idea/DoublyLInkList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoublyLInkList/.idea/editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoublyLInkList/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoublyLInkList/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DoublyLInkList/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CircularLinkedList/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +230,7 @@
       <workItem from="1747630118296" duration="1847000" />
       <workItem from="1747709559723" duration="1425000" />
       <workItem from="1747816414536" duration="673000" />
-      <workItem from="1747888067763" duration="1457000" />
+      <workItem from="1747888067763" duration="2082000" />
     </task>
     <servers />
   </component>
