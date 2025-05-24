@@ -85,6 +85,80 @@ public:
         }
         cout << "NULL\n";
     }
+
+    Node * flatten(Node * head) {
+        if (head == NULL) {
+            return;
+        }
+        Node * curr = head;
+        while (curr != NULL) {
+            if (curr->child != NULL) {
+                //flatten the child node
+                Node * next = curr->next;
+                curr->next =  flatten(curr->child);
+                curr->next->prev = curr;
+                curr->child = NULL;
+            }
+            while (curr->next != NULL) {
+                curr = curr->next;
+            }
+            if (next != NULL) {
+                curr->next = next;
+                next->prev = curr;
+            }
+            curr = curr->next;
+        }
+        return head;
+    }
+
+    Node* flatten(Node* head) {
+        if(head == NULL){
+            return head;
+        }
+        Node * curr = head;
+        while(curr != NULL){
+            if(curr->child != NULL){
+                Node * next = curr->next;
+                curr->next = flatten(curr->child);
+                curr->next->prev = curr;
+                curr->child = NULL;
+
+                while(curr->next != NULL){
+                    curr =  curr->next;
+                }
+                if(next != NULL){
+                    curr->next = next;
+                    next->prev = curr;
+                }
+            }
+            curr = curr->next;
+        }
+        return head;
+    }
+
+
+    Node* reverseKGroup(Node* head, int k) {
+        Node* temp = head;
+        int count = 0;
+
+        while(count < k){
+            if(temp == NULL){
+                return head;
+            }
+            temp = temp->next;
+            count ++;
+        }
+        Node * prevNode = reverseKGroup(temp,k);
+        temp = head; count = 0;
+        while(count < k){
+            Node * next = temp->next;
+            temp->next = prevNode;
+            prevNode = temp;
+            temp = next;
+            count ++;
+        }
+        return prevNode;
+    }
 };
 
 int main() {
