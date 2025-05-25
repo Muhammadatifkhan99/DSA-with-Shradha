@@ -1,25 +1,27 @@
 #include <iostream>
 #include<vector>
+#include<list>
+
 using namespace std;
 
 class Stack {
-    vector<int> v;
+    list<int> v;
 
 public:
     void push(int val) {
-        v.push_back(val);
+        v.push_front(val);
     }
 
     void pop() {
-        v.pop_back();
+        v.pop_front();
     }
 
     int top() {
-        return v[v.size() -1]; //needs to return the actual element
+        return v.front(); //needs to return the actual element
     }
 
     bool empty() {
-        return v.size() ==0;
+        return v.size() == 0;
     }
 };
 int main() {
