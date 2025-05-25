@@ -19,14 +19,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ef42ac2-37ea-4c04-90d4-b23fd58fac2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FlattenDoublyLinkedList/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlattenDoublyLinkedList/.idea/FlattenDoublyLinkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlattenDoublyLinkedList/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlattenDoublyLinkedList/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlattenDoublyLinkedList/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stack/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stack/.idea/Stack.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stack/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stack/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stack/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stack/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CircularLinkedList/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CircularLinkedList/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoublyLInkList/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DoublyLInkList/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +237,8 @@
       <workItem from="1747816414536" duration="673000" />
       <workItem from="1747888067763" duration="2084000" />
       <workItem from="1748020907085" duration="1750000" />
-      <workItem from="1748071106224" duration="88000" />
+      <workItem from="1748071106224" duration="1353000" />
+      <workItem from="1748150437569" duration="317000" />
     </task>
     <servers />
   </component>
