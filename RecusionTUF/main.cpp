@@ -78,11 +78,6 @@ int main() {
     string s = "madsm";
     cout << ispalindrom(0,s);
 
-    int n;
-    cin>>n;
-
-    int arr[n];
-
     // for (int i{0};i<n;i++) cin >>arr[i];
     // reverseArray(0,arr,n);
     // for (int i{0};i<n;i++) cout << arr[i]<< " ";
