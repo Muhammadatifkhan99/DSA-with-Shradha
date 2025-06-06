@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    int x;
+    int x = 10;
     cin >> x;
 
-    cout << "Hey" << x;
+    cout << "Welcome " << x;
 }

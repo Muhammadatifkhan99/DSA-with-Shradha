@@ -2,37 +2,24 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build and Run C++ with IO Redirect",
+      "label": "compile and run",
       "type": "shell",
-      "command": "g++",
+      "command": "bash",
       "args": [
-        "-std=c++17",
-        "-Wall",
-        "${file}",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.out"
+        "-c",
+        "g++ -std=c++17 -Wall -o '${fileDirname}/${fileBasenameNoExtension}.out' '${file}' && '${fileDirname}/${fileBasenameNoExtension}.out' < '${fileDirname}/input.txt' > '${fileDirname}/output.txt'"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": ["$gcc"],
-      "dependsOn": ["Run with IO Redirect"]
-    },
-    {
-      "label": "Run with IO Redirect",
-      "type": "shell",
-      "command": "bash",
-      "args": [
-        "-c",
-        "\"${fileDirname}/${fileBasenameNoExtension}.out\" < \"${fileDirname}/input.txt\" > \"${fileDirname}/output.txt\""
-      ],
       "presentation": {
         "echo": true,
-        "reveal": "always",
-        "focus": false,
+        "reveal": "never",      // don't open terminal output
+        "focus": false,         // don't steal focus
         "panel": "shared"
-      }
+      },
+      "problemMatcher": ["$gcc"]
     }
   ]
 }
