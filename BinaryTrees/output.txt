@@ -1,0 +1,14 @@
+PreOrderTraversal: 1 2 3 4 5 
+inorderTraversal: 2 1 4 3 5 
+postOrderTraversal: 2 4 5 3 1 
+LevelOrderTraversal: 1 2 3 4 5 
+LevelOrderTraversalNewLine: 
+1 
+2 3 
+4 5 
+Height of the BT is: 3
+
+Total Nodes in BT: 5
+
+Sum Nodes in BT: 15
+
