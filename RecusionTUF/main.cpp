@@ -76,7 +76,7 @@ bool ispalindrom(int i,string &s) {
 
 int main() {
     string s = "madsm";
-    cout << ispalindrom(0,s);
+    cout << ispalindrom(0,s);pp
 
     // for (int i{0};i<n;i++) cin >>arr[i];
     // reverseArray(0,arr,n);

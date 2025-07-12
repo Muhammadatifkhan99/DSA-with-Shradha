@@ -1,18 +1,48 @@
 #include <iostream>
 using namespace std;
 
+void NSquare(int n,int i) {
+    if (i >= n) {
+        cout << endl;
+        return;
+    }
+    cout << i << " ";
+    NSquare(n,i+1);
+}
+
 int main() {
     int num{};
     cout<<"Enter a number:";
     cin>>num;
 
+    // cout << "Using RECURSION FOR PATTERNS" << endl;
+    // NSquare(num,1);
+    // cout << endl;
+
+    //Square Pattern For Numbers
+    for (int i{1};i<=num;i++) {
+        for (int j{1};j<=num;j++) {
+            cout <<  "*" << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+    //Square Pattern For Numbers
+    for (int i{1};i<=num;i++) {
+        for (int j{1};j<=num;j++) {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+
 
     //Square Pattern
-
     for (int i{1};i<=num;i++) {
         char ch = 'A';
         for (int j{1};j<=num;j++) {
-            cout << ch;
+            cout << ch << " ";
             ch ++;
         }
         cout << endl;
@@ -20,17 +50,28 @@ int main() {
     cout << endl;
 
     //square patthern for 1 to 9 numbers
-
+    cout << "Square Pattern from 1 to 9 numbers" << endl;
     int number {1};
-    for (int i{1};i<=num;i++) {
+    for (int i{1};i<num;i++) {
         //variables defined outside the inner loop get reset after the inner loop ends execution
-        for (int j{1};j<=num;j++) {
+        for (int j{1};j<num;j++) {
             cout << number;
             number ++;
         }
         cout << endl;
     }
+    cout << "Square Pattern for Characters: " << endl;
+    char c {'A'};
+    for (int i{0};i<num;i++) {
+        //variables defined outside the inner loop get reset after the inner loop ends execution
+        for (int j{0};j<num;j++) {
+            cout << c;
+            c ++;
+        }
+        cout << endl;
+    }
 
+    cout << endl;
     //TRIANGLE PATTERN
     int a = 1;
     for (int i{1};i<=num;i++) {
@@ -52,6 +93,19 @@ int main() {
         cout << endl;
     }
     cout << endl;
+
+    //TRIANGLE PATTERN
+    cout << "Efficient way of doing this: " << endl;
+    for (int i{1};i<=num;i++) {
+        for (int j{1};j<=i;j++) {
+            cout << i ;
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+
+
     cout << "Printing Reverse Triangle"<<endl;
 
     for (int i{0};i<num;i++) {
@@ -62,6 +116,17 @@ int main() {
         }
         cout << endl;
     }
+
+    cout << "Reverse triangle using char loopss" << endl;
+    for (int i{0};i<=num;i++) {
+        char c = 'A' + i;
+        for (int j{0};j<=i;j++) {
+            cout << c ;
+            c--;
+        }
+        cout << endl;
+    }
+
     for (int i{0};i<=num;i++){
         for (int j{0};j<=i;j++){
             cout << " ";
@@ -188,6 +253,23 @@ int main() {
         }
         cout << endl;
     }
+
+    cout <<"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" << endl;
+
+    for (int i{0};i<num;i++) {
+        for (int j{0};j<=num -i -1;j++) {
+            cout << " ";
+        }
+        cout << "*" ;
+        for (int k{i};k>0;k--) {
+            cout << " ";
+        }
+        cout << "*";
+        cout << endl;
+    }
+
+
+    cout << "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" << endl;
 
     return 0;
 }

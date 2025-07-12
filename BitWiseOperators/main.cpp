@@ -30,6 +30,19 @@ int powerOffTwo(int n) {
 
 int main() {
 
+
+    int a = 5;
+    while (a % 2 == 0) {
+        a /= 2;
+    }
+    if (a == 1) {
+        cout << "Power of 2 " << endl;
+    } else cout << "Not power of 2" << endl;
+
+    cout << sizeof(int) << " Bytes" << endl;
+    cout << sizeof(long int) << " Bytes" << endl;
+
+
     powerOfTwo(2);
     powerOfTwo(4);
     powerOfTwo(5);
@@ -88,8 +101,9 @@ int main() {
     if (3 > 1) {
         int x = 10;
         cout << "x is: "<< x << endl;
-    } else
+    } else {
         // cout << x << endl; //x cannot be accessed in the else block
+    }
 
     return 0;
 }
