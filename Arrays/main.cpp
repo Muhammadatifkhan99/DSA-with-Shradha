@@ -1,5 +1,6 @@
 #include <climits>
 #include <iostream>
+#include <vector>
 using namespace std;
 
 void changeArr(int arr[], int size){
@@ -142,7 +143,32 @@ void printArray(int arrr[]) {
     }
 }
 
+int uniqueInArray(vector<int> &arr) {
+    int unique {0};
+    int n = arr.size() - 1;
+    for (int i{0};i<=n;i++) {
+        int count = 0;
+        for (int j{0};j<=n;j++) {
+            if (arr[i] == arr[j]) {
+                count ++;
+            }
+            if (count == 1) {
+                unique = i;
+            }
+        }
+    }
+    return arr[unique];
+}
+
 int main() {
+
+    cout << "Unique Elements in the array" << endl;
+    vector<int> arr1122 = {1,2,3,1,2,3,4};
+    cout << uniqueInArray(arr1122) << endl;
+
+
+
+
     cout << "Arrays in C++" << endl;
     int mark[5];
     int price[] = {89,88,55,66,33};
